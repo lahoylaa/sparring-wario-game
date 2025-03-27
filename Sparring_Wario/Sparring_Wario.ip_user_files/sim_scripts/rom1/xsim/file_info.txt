@@ -1,0 +1,2 @@
+rom1_sim_netlist.vhdl,vhdl,xil_defaultlib,../../../../Sparring_Wario.gen/sources_1/ip/rom1/rom1_sim_netlist.vhdl,
+glbl.v,Verilog,xil_defaultlib,glbl.v
