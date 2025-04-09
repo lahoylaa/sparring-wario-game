@@ -31,6 +31,7 @@ library IEEE;
 entity VGA_To_HDMI is
   port (clk_100MHz, reset      : in  STD_LOGIC;
         btn                    : in  STD_LOGIC;
+        audio_left, audio_right : out std_logic;
         HDMI_clk_p, HDMI_clk_n : out STD_LOGIC;
         HDMI_tx_p, HDMI_tx_n   : out STD_LOGIC_VECTOR(2 downto 0));
 end entity;
@@ -62,6 +63,15 @@ architecture Behavioral of VGA_To_HDMI is
           hcount, vcount : in  STD_LOGIC_VECTOR(10 downto 0);
           char_enable    : out std_logic;
           char_data      : out std_logic_vector(11 downto 0));
+  end component;
+
+  -- Audio Playback
+  component audio_playback is
+    port (
+      clk                     : in  std_logic;
+      reset                   : in  std_logic;
+      audio_left, audio_right : out std_logic
+    );
   end component;
 
   component hdmi_tx_0
@@ -103,7 +113,10 @@ architecture Behavioral of VGA_To_HDMI is
   --signal ASCII_CHAR             : STD_LOGIC_VECTOR(7 downto 0);
   signal char_data                          : std_logic_vector(11 downto 0);
   signal char_enable                        : std_logic;
-  signal ASCII_CHAR, CHAR_2, CHAR_3, CHAR_4 : std_logic_vector(6 downto 0);
+  -- signal ASCII_CHAR, CHAR_2, CHAR_3, CHAR_4 : std_logic_vector(6 downto 0);
+
+  -- Audio Signals
+  -- signal audio_left, audio_right : std_logic;
 
 begin
   -- ------ Cannot pass these directly during instantiation ------
@@ -157,6 +170,14 @@ begin
       vcount      => vcount,
       char_enable => char_enable,
       char_data   => char_data
+    );
+
+  A1: audio_playback
+    port map (
+      clk         => clk_100MHz,
+      reset       => reset,
+      audio_left  => audio_left,
+      audio_right => audio_right
     );
 
   M1: MY_PIXEL_DRIVER

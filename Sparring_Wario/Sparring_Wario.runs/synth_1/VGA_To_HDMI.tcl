@@ -91,11 +91,13 @@ set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 add_files E:/Projects/FPGA/Sparring_Wario/typeface.coe
+add_files e:/Projects/FPGA/Sparring_Wario/output.coe
 read_vhdl -library xil_defaultlib {
   E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/CHAR_GEN.vhd
   E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/MY_PIXEL_DRIVER.vhd
   E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/clk_divide_125Hz.vhd
   E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/debouncer.vhd
+  E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/audio_playback.vhd
   E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/sources_1/imports/new/package_links.vhd
   E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/sources_1/imports/new/package_ball.vhd
   E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/sources_1/imports/new/package_ball_pink.vhd
@@ -129,6 +131,9 @@ read_ip -quiet E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/sources_1/ip/
 set_property used_in_implementation false [get_files -all e:/Projects/FPGA/Sparring_Wario/Sparring_Wario.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc]
 set_property used_in_implementation false [get_files -all e:/Projects/FPGA/Sparring_Wario/Sparring_Wario.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc]
 set_property used_in_implementation false [get_files -all e:/Projects/FPGA/Sparring_Wario/Sparring_Wario.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_ooc.xdc]
+
+read_ip -quiet e:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/sources_1/ip/audio_rom/audio_rom.xci
+set_property used_in_implementation false [get_files -all e:/Projects/FPGA/Sparring_Wario/Sparring_Wario.gen/sources_1/ip/audio_rom/audio_rom_ooc.xdc]
 
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being

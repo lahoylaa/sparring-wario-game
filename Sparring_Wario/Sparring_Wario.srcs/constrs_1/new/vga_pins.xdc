@@ -13,3 +13,10 @@ set_property PACKAGE_PIN R14 [get_ports HDMI_clk_p]
 # button input
 set_property PACKAGE_PIN J5 [get_ports btn]
 set_property IOSTANDARD LVCMOS33 [get_ports btn]
+
+# audio output
+set_property PACKAGE_PIN N13 [get_ports audio_left]
+set_property IOSTANDARD LVCMOS33 [get_ports audio_left]
+
+set_property PACKAGE_PIN N14 [get_ports audio_right]
+set_property IOSTANDARD LVCMOS33 [get_ports audio_right]

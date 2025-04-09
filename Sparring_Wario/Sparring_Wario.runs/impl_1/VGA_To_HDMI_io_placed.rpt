@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version              : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
-| Date                      : Tue Mar 18 23:36:29 2025
+| Date                      : Tue Apr  8 12:55:02 2025
 | Host                      : DESKTOP-88C58FM running 64-bit major release  (build 9200)
 | Command                   : report_io -file VGA_To_HDMI_io_placed.rpt
 | Design                    : VGA_To_HDMI
@@ -25,7 +25,7 @@ Table of Contents
 +---------------+
 | Total User IO |
 +---------------+
-|            11 |
+|            13 |
 +---------------+
 
 
@@ -263,8 +263,8 @@ Table of Contents
 | N10        |              |            | GND                          | GND         |             |         |            |      |                     |                      |     0.0 |            |           |          |      |                  |              |                   |              |
 | N11        |              |            | VCCINT                       | VCCINT      |             |         |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
 | N12        |              |            | GND                          | GND         |             |         |            |      |                     |                      |     0.0 |            |           |          |      |                  |              |                   |              |
-| N13        |              | High Range | IO_L6N_T0_D08_VREF_14        | User IO     |             |      14 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
-| N14        |              | High Range | IO_L5N_T0_D07_14             | User IO     |             |      14 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
+| N13        | audio_left   | High Range | IO_L6N_T0_D08_VREF_14        | OUTPUT      | LVCMOS33    |      14 |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |          |      | NONE             |              |                   |              |
+| N14        | audio_right  | High Range | IO_L5N_T0_D07_14             | OUTPUT      | LVCMOS33    |      14 |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |          |      | NONE             |              |                   |              |
 | N15        | HDMI_tx_p[2] | High Range | IO_L12P_T1_MRCC_14           | OUTPUT      | TMDS_33     |      14 |            |      |                     |            FP_3.3_50 |         | FIXED      |           |          |      | NONE             |              |                   |              |
 | N16        |              |            | GND                          | GND         |             |         |            |      |                     |                      |     0.0 |            |           |          |      |                  |              |                   |              |
 | N17        |              | High Range | VCCO_14                      | VCCO        |             |      14 |            |      |                     |                      |    3.30 |            |           |          |      |                  |              |                   |              |

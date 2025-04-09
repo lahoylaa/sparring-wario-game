@@ -13,3 +13,7 @@ set_property src_info {type:XDC file:1 line:10 export:INPUT save:INPUT read:READ
 set_property PACKAGE_PIN R14 [get_ports HDMI_clk_p]
 set_property src_info {type:XDC file:1 line:14 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN J5 [get_ports btn]
+set_property src_info {type:XDC file:1 line:18 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN N13 [get_ports audio_left]
+set_property src_info {type:XDC file:1 line:21 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN N14 [get_ports audio_right]
