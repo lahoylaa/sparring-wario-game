@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7s50csga324-1" LaunchTime="1744131014">
+<GenRun Id="impl_1" LaunchPart="xc7s50csga324-1" LaunchTime="1744797271">
   <File Type="ROUTE-PWR" Name="VGA_To_HDMI_power_routed.rpt"/>
   <File Type="PA-TCL" Name="VGA_To_HDMI.tcl"/>
   <File Type="ROUTE-PWR-SUM" Name="VGA_To_HDMI_power_summary_routed.pb"/>
@@ -302,6 +302,18 @@
       </FileInfo>
     </File>
     <File Path="$PPRDIR/output.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/audio.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/sound.coe">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>

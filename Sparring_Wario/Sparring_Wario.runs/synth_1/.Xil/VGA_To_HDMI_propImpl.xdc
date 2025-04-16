@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/constrs_1/new/vga_pins.xdc rfile:../../../Sparring_Wario.srcs/constrs_1/new/vga_pins.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.srcs/constrs_1/new/vga_pins.xdc rfile:../../../Sparring_Wario.srcs/constrs_1/new/vga_pins.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:1 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN F14 [get_ports clk_100MHz]
 set_property src_info {type:XDC file:1 line:4 export:INPUT save:INPUT read:READ} [current_design]

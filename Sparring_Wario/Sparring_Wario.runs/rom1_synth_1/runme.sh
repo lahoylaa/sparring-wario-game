@@ -25,7 +25,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.runs/rom1_synth_1'
+HD_PWD='E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.runs/rom1_synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

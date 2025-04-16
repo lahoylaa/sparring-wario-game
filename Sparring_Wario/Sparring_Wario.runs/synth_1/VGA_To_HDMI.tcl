@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.runs/synth_1/VGA_To_HDMI.tcl"
+  variable script "E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.runs/synth_1/VGA_To_HDMI.tcl"
   variable category "vivado_synth"
 }
 
@@ -79,61 +79,63 @@ set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
-set_property webtalk.parent_dir E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.cache/wt [current_project]
-set_property parent.project_path E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.xpr [current_project]
+set_property webtalk.parent_dir E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.cache/wt [current_project]
+set_property parent.project_path E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.xpr [current_project]
 set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language VHDL [current_project]
-set_property ip_repo_paths e:/Projects/FPGA/Sparring_Wario/hdmi_tx_1.0 [current_project]
+set_property ip_repo_paths e:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/hdmi_tx_1.0 [current_project]
 update_ip_catalog
-set_property ip_output_repo e:/Projects/FPGA/Sparring_Wario/Sparring_Wario.cache/ip [current_project]
+set_property ip_output_repo e:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-add_files E:/Projects/FPGA/Sparring_Wario/typeface.coe
-add_files e:/Projects/FPGA/Sparring_Wario/output.coe
+add_files E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/typeface.coe
+add_files E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/output.coe
+add_files E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/audio.coe
+add_files e:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/sound.coe
 read_vhdl -library xil_defaultlib {
-  E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/CHAR_GEN.vhd
-  E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/MY_PIXEL_DRIVER.vhd
-  E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/clk_divide_125Hz.vhd
-  E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/debouncer.vhd
-  E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/audio_playback.vhd
-  E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/sources_1/imports/new/package_links.vhd
-  E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/sources_1/imports/new/package_ball.vhd
-  E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/sources_1/imports/new/package_ball_pink.vhd
-  E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/sources_1/imports/new/package_ball_red.vhd
-  E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/sources_1/imports/new/package_ball_punch_1.vhd
-  E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/sources_1/imports/new/package_ball_punch_2.vhd
-  E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/sources_1/imports/new/package_ball_punch_3.vhd
-  E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/chain_bram.vhd
-  E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/draw_background.vhd
-  E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/draw_chain.vhd
-  E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/draw_wario.vhd
-  E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/sources_1/imports/new/package_end_pos_1.vhd
-  E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/sources_1/imports/new/package_end_pos_2.vhd
-  E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/sources_1/imports/new/package_fall.vhd
-  E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/sources_1/imports/new/package_idle_1.vhd
-  E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/sources_1/imports/new/package_idle_2.vhd
-  E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/sources_1/imports/new/package_jump_1.vhd
-  E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/sources_1/imports/new/package_jump_2.vhd
-  E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/sources_1/imports/new/package_punch.vhd
-  E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/sources_1/imports/new/package_roll.vhd
-  E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/sprite_bram.vhd
-  E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/vga_controller_640_60.vhd
-  E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/VGA_To_HDMI.vhd
+  E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/CHAR_GEN.vhd
+  E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/MY_PIXEL_DRIVER.vhd
+  E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/clk_divide_125Hz.vhd
+  E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/debouncer.vhd
+  E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/audio_playback.vhd
+  E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.srcs/sources_1/imports/new/package_links.vhd
+  E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.srcs/sources_1/imports/new/package_ball.vhd
+  E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.srcs/sources_1/imports/new/package_ball_pink.vhd
+  E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.srcs/sources_1/imports/new/package_ball_red.vhd
+  E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.srcs/sources_1/imports/new/package_ball_punch_1.vhd
+  E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.srcs/sources_1/imports/new/package_ball_punch_2.vhd
+  E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.srcs/sources_1/imports/new/package_ball_punch_3.vhd
+  E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/chain_bram.vhd
+  E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/draw_background.vhd
+  E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/draw_chain.vhd
+  E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/draw_wario.vhd
+  E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.srcs/sources_1/imports/new/package_end_pos_1.vhd
+  E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.srcs/sources_1/imports/new/package_end_pos_2.vhd
+  E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.srcs/sources_1/imports/new/package_fall.vhd
+  E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.srcs/sources_1/imports/new/package_idle_1.vhd
+  E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.srcs/sources_1/imports/new/package_idle_2.vhd
+  E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.srcs/sources_1/imports/new/package_jump_1.vhd
+  E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.srcs/sources_1/imports/new/package_jump_2.vhd
+  E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.srcs/sources_1/imports/new/package_punch.vhd
+  E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.srcs/sources_1/imports/new/package_roll.vhd
+  E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/sprite_bram.vhd
+  E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/vga_controller_640_60.vhd
+  E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/VGA_To_HDMI.vhd
 }
-read_ip -quiet E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/sources_1/ip/hdmi_tx_0/hdmi_tx_0.xci
+read_ip -quiet E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.srcs/sources_1/ip/hdmi_tx_0/hdmi_tx_0.xci
 
-read_ip -quiet E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/sources_1/ip/rom1/rom1.xci
-set_property used_in_implementation false [get_files -all e:/Projects/FPGA/Sparring_Wario/Sparring_Wario.gen/sources_1/ip/rom1/rom1_ooc.xdc]
+read_ip -quiet E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.srcs/sources_1/ip/rom1/rom1.xci
+set_property used_in_implementation false [get_files -all e:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.gen/sources_1/ip/rom1/rom1_ooc.xdc]
 
-read_ip -quiet E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci
-set_property used_in_implementation false [get_files -all e:/Projects/FPGA/Sparring_Wario/Sparring_Wario.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc]
-set_property used_in_implementation false [get_files -all e:/Projects/FPGA/Sparring_Wario/Sparring_Wario.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc]
-set_property used_in_implementation false [get_files -all e:/Projects/FPGA/Sparring_Wario/Sparring_Wario.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_ooc.xdc]
+read_ip -quiet E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci
+set_property used_in_implementation false [get_files -all e:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc]
+set_property used_in_implementation false [get_files -all e:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc]
+set_property used_in_implementation false [get_files -all e:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_ooc.xdc]
 
-read_ip -quiet e:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/sources_1/ip/audio_rom/audio_rom.xci
-set_property used_in_implementation false [get_files -all e:/Projects/FPGA/Sparring_Wario/Sparring_Wario.gen/sources_1/ip/audio_rom/audio_rom_ooc.xdc]
+read_ip -quiet e:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.srcs/sources_1/ip/audio_rom/audio_rom.xci
+set_property used_in_implementation false [get_files -all e:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.gen/sources_1/ip/audio_rom/audio_rom_ooc.xdc]
 
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -144,12 +146,12 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/constrs_1/new/vga_pins.xdc
-set_property used_in_implementation false [get_files E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/constrs_1/new/vga_pins.xdc]
+read_xdc E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.srcs/constrs_1/new/vga_pins.xdc
+set_property used_in_implementation false [get_files E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.srcs/constrs_1/new/vga_pins.xdc]
 
 set_param ips.enableIPCacheLiteLoad 1
 
-read_checkpoint -auto_incremental -incremental E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/utils_1/imports/synth_1/VGA_To_HDMI.dcp
+read_checkpoint -auto_incremental -incremental E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.srcs/utils_1/imports/synth_1/VGA_To_HDMI.dcp
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }

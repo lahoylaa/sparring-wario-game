@@ -1,0 +1,461 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Sat Apr 12 20:09:12 2025
+# Process ID: 29256
+# Current directory: E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent34676 E:\Projects\FPGA\Sparring_Wario_Game\Sparring_Wario\Sparring_Wario.xpr
+# Log file: E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/vivado.log
+# Journal file: E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario\vivado.jou
+# Running On: DESKTOP-88C58FM, OS: Windows, CPU Frequency: 3793 MHz, CPU Physical cores: 16, Host memory: 29952 MB
+#-----------------------------------------------------------
+start_gui
+open_project E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.xpr
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.srcs/sources_1/ip/audio_rom/audio_rom.xci] -no_script -reset -force -quiet
+remove_files  -fileset audio_rom E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.srcs/sources_1/ip/audio_rom/audio_rom.xci
+file delete -force E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.srcs/sources_1/ip/audio_rom
+file delete -force e:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.gen/sources_1/ip/audio_rom
+create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.4 -module_name audio_rom
+set_property -dict [list \
+  CONFIG.Coe_File {E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/audio.coe} \
+  CONFIG.Enable_A {Always_Enabled} \
+  CONFIG.Load_Init_File {true} \
+  CONFIG.Memory_Type {Single_Port_ROM} \
+  CONFIG.Register_PortA_Output_of_Memory_Core {true} \
+  CONFIG.Register_PortA_Output_of_Memory_Primitives {false} \
+  CONFIG.Write_Depth_A {120000} \
+  CONFIG.Write_Width_A {8} \
+] [get_ips audio_rom]
+generate_target {instantiation_template} [get_files e:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.srcs/sources_1/ip/audio_rom/audio_rom.xci]
+update_compile_order -fileset sources_1
+generate_target all [get_files  e:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.srcs/sources_1/ip/audio_rom/audio_rom.xci]
+catch { config_ip_cache -export [get_ips -all audio_rom] }
+export_ip_user_files -of_objects [get_files e:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.srcs/sources_1/ip/audio_rom/audio_rom.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] e:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.srcs/sources_1/ip/audio_rom/audio_rom.xci]
+launch_runs audio_rom_synth_1 -jobs 6
+wait_on_run audio_rom_synth_1
+wait_on_run audio_rom_synth_1
+export_simulation -of_objects [get_files e:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.srcs/sources_1/ip/audio_rom/audio_rom.xci] -directory E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.ip_user_files/sim_scripts -ip_user_files_dir E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.ip_user_files -ipstatic_source_dir E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.cache/compile_simlib/modelsim} {questa=E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.cache/compile_simlib/questa} {riviera=E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.cache/compile_simlib/riviera} {activehdl=E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run rom1_synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+launch_runs impl_1 -jobs 6
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.runs/impl_1/VGA_To_HDMI.bit} [get_hw_devices xc7s50_0]
+current_hw_device [get_hw_devices xc7s50_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7s50_0] 0]
+create_hw_cfgmem -hw_device [get_hw_devices xc7s50_0] -mem_dev [lindex [get_cfgmem_parts {s25fl128sxxxxxx0-spi-x1_x2_x4}] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7s50_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7s50_0]
+set_property PROGRAM.FILE {E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.runs/impl_1/VGA_To_HDMI.bit} [get_hw_devices xc7s50_0]
+program_hw_devices [get_hw_devices xc7s50_0]
+refresh_hw_device [lindex [get_hw_devices xc7s50_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7s50_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7s50_0]
+set_property PROGRAM.FILE {E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.runs/impl_1/VGA_To_HDMI.bit} [get_hw_devices xc7s50_0]
+program_hw_devices [get_hw_devices xc7s50_0]
+refresh_hw_device [lindex [get_hw_devices xc7s50_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7s50_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7s50_0]
+set_property PROGRAM.FILE {E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.runs/impl_1/VGA_To_HDMI.bit} [get_hw_devices xc7s50_0]
+program_hw_devices [get_hw_devices xc7s50_0]
+refresh_hw_device [lindex [get_hw_devices xc7s50_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7s50_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7s50_0]
+set_property PROGRAM.FILE {E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.runs/impl_1/VGA_To_HDMI.bit} [get_hw_devices xc7s50_0]
+program_hw_devices [get_hw_devices xc7s50_0]
+refresh_hw_device [lindex [get_hw_devices xc7s50_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7s50_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7s50_0]
+set_property PROGRAM.FILE {E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.runs/impl_1/VGA_To_HDMI.bit} [get_hw_devices xc7s50_0]
+program_hw_devices [get_hw_devices xc7s50_0]
+refresh_hw_device [lindex [get_hw_devices xc7s50_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+close_hw_manager
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.runs/impl_1/VGA_To_HDMI.bit} [get_hw_devices xc7s50_0]
+current_hw_device [get_hw_devices xc7s50_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7s50_0] 0]
+create_hw_cfgmem -hw_device [get_hw_devices xc7s50_0] -mem_dev [lindex [get_cfgmem_parts {s25fl128sxxxxxx0-spi-x1_x2_x4}] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7s50_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7s50_0]
+set_property PROGRAM.FILE {E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.runs/impl_1/VGA_To_HDMI.bit} [get_hw_devices xc7s50_0]
+program_hw_devices [get_hw_devices xc7s50_0]
+refresh_hw_device [lindex [get_hw_devices xc7s50_0] 0]
+close_hw_manager
+set_property CONFIG.Coe_File {E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/audio.coe} [get_ips audio_rom]
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.runs/impl_1/VGA_To_HDMI.bit} [get_hw_devices xc7s50_0]
+current_hw_device [get_hw_devices xc7s50_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7s50_0] 0]
+create_hw_cfgmem -hw_device [get_hw_devices xc7s50_0] -mem_dev [lindex [get_cfgmem_parts {s25fl128sxxxxxx0-spi-x1_x2_x4}] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7s50_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7s50_0]
+set_property PROGRAM.FILE {E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.runs/impl_1/VGA_To_HDMI.bit} [get_hw_devices xc7s50_0]
+program_hw_devices [get_hw_devices xc7s50_0]
+refresh_hw_device [lindex [get_hw_devices xc7s50_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7s50_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7s50_0]
+set_property PROGRAM.FILE {E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.runs/impl_1/VGA_To_HDMI.bit} [get_hw_devices xc7s50_0]
+program_hw_devices [get_hw_devices xc7s50_0]
+refresh_hw_device [lindex [get_hw_devices xc7s50_0] 0]
+close_hw_manager
+set_property -dict [list \
+  CONFIG.Coe_File {E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/output.coe} \
+  CONFIG.Write_Depth_A {240000} \
+] [get_ips audio_rom]
+generate_target all [get_files  e:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.srcs/sources_1/ip/audio_rom/audio_rom.xci]
+catch { config_ip_cache -export [get_ips -all audio_rom] }
+catch { [ delete_ip_run [get_ips -all audio_rom] ] }
+export_ip_user_files -of_objects [get_files e:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.srcs/sources_1/ip/audio_rom/audio_rom.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] e:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.srcs/sources_1/ip/audio_rom/audio_rom.xci]
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+launch_runs impl_1 -jobs 6
+wait_on_run impl_1
+open_project E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.xpr
+update_compile_order -fileset sources_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.runs/impl_1/VGA_To_HDMI.bit} [get_hw_devices xc7s50_0]
+current_hw_device [get_hw_devices xc7s50_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7s50_0] 0]
+create_hw_cfgmem -hw_device [get_hw_devices xc7s50_0] -mem_dev [lindex [get_cfgmem_parts {s25fl128sxxxxxx0-spi-x1_x2_x4}] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7s50_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7s50_0]
+set_property PROGRAM.FILE {E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.runs/impl_1/VGA_To_HDMI.bit} [get_hw_devices xc7s50_0]
+program_hw_devices [get_hw_devices xc7s50_0]
+refresh_hw_device [lindex [get_hw_devices xc7s50_0] 0]
+current_project Sparring_Wario
+close_project
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+disconnect_hw_server localhost:3121
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.runs/impl_1/VGA_To_HDMI.bit} [get_hw_devices xc7s50_0]
+current_hw_device [get_hw_devices xc7s50_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7s50_0] 0]
+create_hw_cfgmem -hw_device [get_hw_devices xc7s50_0] -mem_dev [lindex [get_cfgmem_parts {s25fl128sxxxxxx0-spi-x1_x2_x4}] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7s50_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7s50_0]
+set_property PROGRAM.FILE {E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.runs/impl_1/VGA_To_HDMI.bit} [get_hw_devices xc7s50_0]
+program_hw_devices [get_hw_devices xc7s50_0]
+refresh_hw_device [lindex [get_hw_devices xc7s50_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7s50_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7s50_0]
+set_property PROGRAM.FILE {E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.runs/impl_1/VGA_To_HDMI.bit} [get_hw_devices xc7s50_0]
+program_hw_devices [get_hw_devices xc7s50_0]
+refresh_hw_device [lindex [get_hw_devices xc7s50_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7s50_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7s50_0]
+set_property PROGRAM.FILE {E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.runs/impl_1/VGA_To_HDMI.bit} [get_hw_devices xc7s50_0]
+program_hw_devices [get_hw_devices xc7s50_0]
+refresh_hw_device [lindex [get_hw_devices xc7s50_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+disconnect_hw_server localhost:3121
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.runs/impl_1/VGA_To_HDMI.bit} [get_hw_devices xc7s50_0]
+current_hw_device [get_hw_devices xc7s50_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7s50_0] 0]
+create_hw_cfgmem -hw_device [get_hw_devices xc7s50_0] -mem_dev [lindex [get_cfgmem_parts {s25fl128sxxxxxx0-spi-x1_x2_x4}] 0]
+delete_hw_cfgmem [ get_property PROGRAM.HW_CFGMEM [get_hw_devices xc7s50_0 ]]
+set_property PROBES.FILE {} [get_hw_devices xc7s50_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7s50_0]
+set_property PROGRAM.FILE {E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.runs/impl_1/VGA_To_HDMI.bit} [get_hw_devices xc7s50_0]
+program_hw_devices [get_hw_devices xc7s50_0]
+refresh_hw_device [lindex [get_hw_devices xc7s50_0] 0]
+close_hw_manager
+create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.4 -module_name audio_rom2
+set_property -dict [list \
+  CONFIG.Coe_File {E:/Projects/FPGA/Sparring_Wario/audio_mono.coe} \
+  CONFIG.Enable_A {Always_Enabled} \
+  CONFIG.Load_Init_File {true} \
+  CONFIG.Memory_Type {Single_Port_ROM} \
+  CONFIG.Register_PortA_Output_of_Memory_Core {true} \
+  CONFIG.Register_PortA_Output_of_Memory_Primitives {false} \
+  CONFIG.Write_Depth_A {240000} \
+  CONFIG.Write_Width_A {8} \
+] [get_ips audio_rom2]
+generate_target {instantiation_template} [get_files e:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/sources_1/ip/audio_rom2/audio_rom2.xci]
+update_compile_order -fileset sources_1
+generate_target all [get_files  e:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/sources_1/ip/audio_rom2/audio_rom2.xci]
+catch { config_ip_cache -export [get_ips -all audio_rom2] }
+export_ip_user_files -of_objects [get_files e:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/sources_1/ip/audio_rom2/audio_rom2.xci] -no_script -sync -force -quiet
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+disconnect_hw_server localhost:3121
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.runs/impl_1/VGA_To_HDMI.bit} [get_hw_devices xc7s50_0]
+current_hw_device [get_hw_devices xc7s50_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7s50_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7s50_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7s50_0]
+set_property PROGRAM.FILE {E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.runs/impl_1/VGA_To_HDMI.bit} [get_hw_devices xc7s50_0]
+program_hw_devices [get_hw_devices xc7s50_0]
+refresh_hw_device [lindex [get_hw_devices xc7s50_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7s50_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7s50_0]
+set_property PROGRAM.FILE {E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.runs/impl_1/VGA_To_HDMI.bit} [get_hw_devices xc7s50_0]
+program_hw_devices [get_hw_devices xc7s50_0]
+refresh_hw_device [lindex [get_hw_devices xc7s50_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+disconnect_hw_server localhost:3121
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.runs/impl_1/VGA_To_HDMI.bit} [get_hw_devices xc7s50_0]
+current_hw_device [get_hw_devices xc7s50_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7s50_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7s50_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7s50_0]
+set_property PROGRAM.FILE {E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.runs/impl_1/VGA_To_HDMI.bit} [get_hw_devices xc7s50_0]
+program_hw_devices [get_hw_devices xc7s50_0]
+refresh_hw_device [lindex [get_hw_devices xc7s50_0] 0]
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+launch_runs impl_1 -jobs 6
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7s50_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7s50_0]
+set_property PROGRAM.FILE {E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.runs/impl_1/VGA_To_HDMI.bit} [get_hw_devices xc7s50_0]
+program_hw_devices [get_hw_devices xc7s50_0]
+refresh_hw_device [lindex [get_hw_devices xc7s50_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7s50_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7s50_0]
+set_property PROGRAM.FILE {E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.runs/impl_1/VGA_To_HDMI.bit} [get_hw_devices xc7s50_0]
+program_hw_devices [get_hw_devices xc7s50_0]
+refresh_hw_device [lindex [get_hw_devices xc7s50_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7s50_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7s50_0]
+set_property PROGRAM.FILE {E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.runs/impl_1/VGA_To_HDMI.bit} [get_hw_devices xc7s50_0]
+program_hw_devices [get_hw_devices xc7s50_0]
+refresh_hw_device [lindex [get_hw_devices xc7s50_0] 0]
+close_hw_manager
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+launch_runs impl_1 -jobs 6
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.runs/impl_1/VGA_To_HDMI.bit} [get_hw_devices xc7s50_0]
+current_hw_device [get_hw_devices xc7s50_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7s50_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7s50_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7s50_0]
+set_property PROGRAM.FILE {E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.runs/impl_1/VGA_To_HDMI.bit} [get_hw_devices xc7s50_0]
+program_hw_devices [get_hw_devices xc7s50_0]
+refresh_hw_device [lindex [get_hw_devices xc7s50_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7s50_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7s50_0]
+set_property PROGRAM.FILE {E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.runs/impl_1/VGA_To_HDMI.bit} [get_hw_devices xc7s50_0]
+program_hw_devices [get_hw_devices xc7s50_0]
+refresh_hw_device [lindex [get_hw_devices xc7s50_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7s50_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7s50_0]
+set_property PROGRAM.FILE {E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.runs/impl_1/VGA_To_HDMI.bit} [get_hw_devices xc7s50_0]
+program_hw_devices [get_hw_devices xc7s50_0]
+refresh_hw_device [lindex [get_hw_devices xc7s50_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+refresh_design
+close_design
+create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.4 -module_name sound_rom
+set_property -dict [list \
+  CONFIG.Coe_File {E:/Projects/FPGA/Sparring_Wario/sound.coe} \
+  CONFIG.Enable_A {Always_Enabled} \
+  CONFIG.Load_Init_File {true} \
+  CONFIG.Memory_Type {Single_Port_ROM} \
+  CONFIG.Register_PortA_Output_of_Memory_Core {true} \
+  CONFIG.Register_PortA_Output_of_Memory_Primitives {false} \
+  CONFIG.Write_Depth_A {44000} \
+  CONFIG.Write_Width_A {8} \
+] [get_ips sound_rom]
+generate_target {instantiation_template} [get_files e:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/sources_1/ip/sound_rom/sound_rom.xci]
+generate_target all [get_files  e:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/sources_1/ip/sound_rom/sound_rom.xci]
+catch { config_ip_cache -export [get_ips -all sound_rom] }
+export_ip_user_files -of_objects [get_files e:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/sources_1/ip/sound_rom/sound_rom.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] e:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/sources_1/ip/sound_rom/sound_rom.xci]
+launch_runs sound_rom_synth_1 -jobs 6
+wait_on_run sound_rom_synth_1
+wait_on_run sound_rom_synth_1
+export_simulation -of_objects [get_files e:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/sources_1/ip/sound_rom/sound_rom.xci] -directory E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.ip_user_files/sim_scripts -ip_user_files_dir E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.ip_user_files -ipstatic_source_dir E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.cache/compile_simlib/modelsim} {questa=E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.cache/compile_simlib/questa} {riviera=E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.cache/compile_simlib/riviera} {activehdl=E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+reset_run audio_rom2_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+launch_runs impl_1 -jobs 6
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7s50_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7s50_0]
+set_property PROGRAM.FILE {E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.runs/impl_1/VGA_To_HDMI.bit} [get_hw_devices xc7s50_0]
+program_hw_devices [get_hw_devices xc7s50_0]
+refresh_hw_device [lindex [get_hw_devices xc7s50_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7s50_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7s50_0]
+set_property PROGRAM.FILE {E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.runs/impl_1/VGA_To_HDMI.bit} [get_hw_devices xc7s50_0]
+program_hw_devices [get_hw_devices xc7s50_0]
+refresh_hw_device [lindex [get_hw_devices xc7s50_0] 0]
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7s50_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7s50_0]
+set_property PROGRAM.FILE {E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.runs/impl_1/VGA_To_HDMI.bit} [get_hw_devices xc7s50_0]
+program_hw_devices [get_hw_devices xc7s50_0]
+refresh_hw_device [lindex [get_hw_devices xc7s50_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7s50_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7s50_0]
+set_property PROGRAM.FILE {E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.runs/impl_1/VGA_To_HDMI.bit} [get_hw_devices xc7s50_0]
+program_hw_devices [get_hw_devices xc7s50_0]
+refresh_hw_device [lindex [get_hw_devices xc7s50_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7s50_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7s50_0]
+set_property PROGRAM.FILE {E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.runs/impl_1/VGA_To_HDMI.bit} [get_hw_devices xc7s50_0]
+program_hw_devices [get_hw_devices xc7s50_0]
+refresh_hw_device [lindex [get_hw_devices xc7s50_0] 0]
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7s50_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7s50_0]
+set_property PROGRAM.FILE {E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.runs/impl_1/VGA_To_HDMI.bit} [get_hw_devices xc7s50_0]
+program_hw_devices [get_hw_devices xc7s50_0]
+refresh_hw_device [lindex [get_hw_devices xc7s50_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7s50_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7s50_0]
+set_property PROGRAM.FILE {E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.runs/impl_1/VGA_To_HDMI.bit} [get_hw_devices xc7s50_0]
+program_hw_devices [get_hw_devices xc7s50_0]
+refresh_hw_device [lindex [get_hw_devices xc7s50_0] 0]
+open_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+close_design
+close_design
+set_property PROBES.FILE {} [get_hw_devices xc7s50_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7s50_0]
+set_property PROGRAM.FILE {E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.runs/impl_1/VGA_To_HDMI.bit} [get_hw_devices xc7s50_0]
+program_hw_devices [get_hw_devices xc7s50_0]
+refresh_hw_device [lindex [get_hw_devices xc7s50_0] 0]
+close_hw_manager
+export_ip_user_files -of_objects  [get_files E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/sources_1/ip/audio_rom/audio_rom.xci] -no_script -reset -force -quiet
+remove_files  -fileset audio_rom E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/sources_1/ip/audio_rom/audio_rom.xci
+file delete -force E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/sources_1/ip/audio_rom
+file delete -force e:/Projects/FPGA/Sparring_Wario/Sparring_Wario.gen/sources_1/ip/audio_rom
+export_ip_user_files -of_objects  [get_files e:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/sources_1/ip/sound_rom/sound_rom.xci] -no_script -reset -force -quiet
+remove_files  -fileset sound_rom e:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/sources_1/ip/sound_rom/sound_rom.xci
+file delete -force e:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/sources_1/ip/sound_rom
+file delete -force e:/Projects/FPGA/Sparring_Wario/Sparring_Wario.gen/sources_1/ip/sound_rom
+create_project LA13 E:/Projects/FPGA/LA13 -part xc7s50csga324-1
+set_property target_language VHDL [current_project]
+set_property simulator_language VHDL [current_project]
+create_ip -name cordic -vendor xilinx.com -library ip -version 6.0 -module_name cordic_0
+set_property -dict [list \
+  CONFIG.Data_Format {SignedFraction} \
+  CONFIG.Functional_Selection {Sin_and_Cos} \
+] [get_ips cordic_0]
+generate_target {instantiation_template} [get_files e:/Projects/FPGA/LA13/LA13.srcs/sources_1/ip/cordic_0/cordic_0.xci]
+generate_target all [get_files  e:/Projects/FPGA/LA13/LA13.srcs/sources_1/ip/cordic_0/cordic_0.xci]
+catch { config_ip_cache -export [get_ips -all cordic_0] }
+export_ip_user_files -of_objects [get_files e:/Projects/FPGA/LA13/LA13.srcs/sources_1/ip/cordic_0/cordic_0.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] e:/Projects/FPGA/LA13/LA13.srcs/sources_1/ip/cordic_0/cordic_0.xci]
+launch_runs cordic_0_synth_1 -jobs 6
+wait_on_run cordic_0_synth_1
+wait_on_run cordic_0_synth_1
+export_simulation -of_objects [get_files e:/Projects/FPGA/LA13/LA13.srcs/sources_1/ip/cordic_0/cordic_0.xci] -directory E:/Projects/FPGA/LA13/LA13.ip_user_files/sim_scripts -ip_user_files_dir E:/Projects/FPGA/LA13/LA13.ip_user_files -ipstatic_source_dir E:/Projects/FPGA/LA13/LA13.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/Projects/FPGA/LA13/LA13.cache/compile_simlib/modelsim} {questa=E:/Projects/FPGA/LA13/LA13.cache/compile_simlib/questa} {riviera=E:/Projects/FPGA/LA13/LA13.cache/compile_simlib/riviera} {activehdl=E:/Projects/FPGA/LA13/LA13.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+update_compile_order -fileset sources_1
+file mkdir E:/Projects/FPGA/LA13/LA13.srcs/sources_1/new
+close [ open E:/Projects/FPGA/LA13/LA13.srcs/sources_1/new/cordic.vhd w ]
+add_files E:/Projects/FPGA/LA13/LA13.srcs/sources_1/new/cordic.vhd
+file mkdir E:/Projects/FPGA/LA13/LA13.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open E:/Projects/FPGA/LA13/LA13.srcs/sim_1/new/cordic_tb.vhd w ]
+add_files -fileset sim_1 E:/Projects/FPGA/LA13/LA13.srcs/sim_1/new/cordic_tb.vhd
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+launch_simulation
+source cordic_tb.tcl
+relaunch_sim
+relaunch_sim
+close_sim
+launch_simulation
+source cordic_tb.tcl
+relaunch_sim
+relaunch_sim
+relaunch_sim
+current_wave_config {Untitled 2}
+add_wave {{/cordic_tb/cos_int}} {{/cordic_tb/sin_int}} {{/cordic_tb/cos_real}} {{/cordic_tb/sin_real}} 
+relaunch_sim

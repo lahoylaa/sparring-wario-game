@@ -3,21 +3,21 @@
 # SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
 # IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
 # SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
-# Start of session at: Tue Apr  8 12:50:17 2025
-# Process ID: 4212
-# Current directory: E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.runs/synth_1
+# Start of session at: Wed Apr 16 05:54:34 2025
+# Process ID: 31200
+# Current directory: E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.runs/synth_1
 # Command line: vivado.exe -log VGA_To_HDMI.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source VGA_To_HDMI.tcl
-# Log file: E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.runs/synth_1/VGA_To_HDMI.vds
-# Journal file: E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.runs/synth_1\vivado.jou
+# Log file: E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.runs/synth_1/VGA_To_HDMI.vds
+# Journal file: E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.runs/synth_1\vivado.jou
 # Running On: DESKTOP-88C58FM, OS: Windows, CPU Frequency: 3793 MHz, CPU Physical cores: 16, Host memory: 29952 MB
 #-----------------------------------------------------------
 source VGA_To_HDMI.tcl -notrace
-create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 441.203 ; gain = 164.801
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 439.926 ; gain = 163.508
 INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/Projects/FPGA/Sparring_Wario/hdmi_tx_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/hdmi_tx_1.0'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2023.1/data/ip'.
-Command: read_checkpoint -auto_incremental -incremental E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/utils_1/imports/synth_1/VGA_To_HDMI.dcp
-INFO: [Vivado 12-5825] Read reference checkpoint from E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/utils_1/imports/synth_1/VGA_To_HDMI.dcp for incremental synthesis
+Command: read_checkpoint -auto_incremental -incremental E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.srcs/utils_1/imports/synth_1/VGA_To_HDMI.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.srcs/utils_1/imports/synth_1/VGA_To_HDMI.dcp for incremental synthesis
 INFO: [Vivado 12-7989] Please ensure there are no constraint changes
 Command: synth_design -top VGA_To_HDMI -part xc7s50csga324-1
 Starting synth_design
@@ -28,207 +28,207 @@ INFO: [Designutils 20-5440] No compile time benefit to using incremental synthes
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 26784
+INFO: [Synth 8-7075] Helper process launched with PID 16656
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1264.836 ; gain = 411.742
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1263.789 ; gain = 412.035
 ---------------------------------------------------------------------------------
-WARNING: [Synth 8-9112] actual for formal port 'sx' is neither a static name nor a globally static expression [E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/MY_PIXEL_DRIVER.vhd:153]
-WARNING: [Synth 8-9112] actual for formal port 'sy' is neither a static name nor a globally static expression [E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/MY_PIXEL_DRIVER.vhd:154]
-WARNING: [Synth 8-9112] actual for formal port 'sx' is neither a static name nor a globally static expression [E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/MY_PIXEL_DRIVER.vhd:169]
-WARNING: [Synth 8-9112] actual for formal port 'sy' is neither a static name nor a globally static expression [E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/MY_PIXEL_DRIVER.vhd:170]
-INFO: [Synth 8-638] synthesizing module 'VGA_To_HDMI' [E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/VGA_To_HDMI.vhd:39]
-INFO: [Synth 8-638] synthesizing module 'clk_divide_125Hz' [E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/clk_divide_125Hz.vhd:47]
-INFO: [Synth 8-256] done synthesizing module 'clk_divide_125Hz' (0#1) [E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/clk_divide_125Hz.vhd:47]
-INFO: [Synth 8-638] synthesizing module 'debouncer' [E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/debouncer.vhd:41]
-INFO: [Synth 8-226] default block is never used [E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/debouncer.vhd:60]
-INFO: [Synth 8-256] done synthesizing module 'debouncer' (0#1) [E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/debouncer.vhd:41]
-INFO: [Synth 8-3491] module 'clk_wiz_0' declared at 'E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.runs/synth_1/.Xil/Vivado-4212-DESKTOP-88C58FM/realtime/clk_wiz_0_stub.vhdl:6' bound to instance 'C1' of component 'clk_wiz_0' [E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/VGA_To_HDMI.vhd:144]
-INFO: [Synth 8-638] synthesizing module 'clk_wiz_0' [E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.runs/synth_1/.Xil/Vivado-4212-DESKTOP-88C58FM/realtime/clk_wiz_0_stub.vhdl:17]
-INFO: [Synth 8-3491] module 'vga_controller_640_60' declared at 'E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/vga_controller_640_60.vhd:75' bound to instance 'V1' of component 'vga_controller_640_60' [E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/VGA_To_HDMI.vhd:154]
-INFO: [Synth 8-638] synthesizing module 'vga_controller_640_60' [E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/vga_controller_640_60.vhd:88]
-INFO: [Synth 8-256] done synthesizing module 'vga_controller_640_60' (0#1) [E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/vga_controller_640_60.vhd:88]
-INFO: [Synth 8-3491] module 'CHAR_GEN' declared at 'E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/CHAR_GEN.vhd:38' bound to instance 'G1' of component 'CHAR_GEN' [E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/VGA_To_HDMI.vhd:165]
-INFO: [Synth 8-638] synthesizing module 'CHAR_GEN' [E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/CHAR_GEN.vhd:47]
-INFO: [Synth 8-3491] module 'rom1' declared at 'E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.runs/synth_1/.Xil/Vivado-4212-DESKTOP-88C58FM/realtime/rom1_stub.vhdl:6' bound to instance 'rom_inst' of component 'rom1' [E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/CHAR_GEN.vhd:105]
-INFO: [Synth 8-638] synthesizing module 'rom1' [E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.runs/synth_1/.Xil/Vivado-4212-DESKTOP-88C58FM/realtime/rom1_stub.vhdl:15]
-INFO: [Synth 8-3491] module 'rom1' declared at 'E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.runs/synth_1/.Xil/Vivado-4212-DESKTOP-88C58FM/realtime/rom1_stub.vhdl:6' bound to instance 'rom_inst' of component 'rom1' [E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/CHAR_GEN.vhd:105]
-INFO: [Synth 8-3491] module 'rom1' declared at 'E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.runs/synth_1/.Xil/Vivado-4212-DESKTOP-88C58FM/realtime/rom1_stub.vhdl:6' bound to instance 'rom_inst' of component 'rom1' [E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/CHAR_GEN.vhd:105]
-INFO: [Synth 8-3491] module 'rom1' declared at 'E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.runs/synth_1/.Xil/Vivado-4212-DESKTOP-88C58FM/realtime/rom1_stub.vhdl:6' bound to instance 'rom_inst' of component 'rom1' [E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/CHAR_GEN.vhd:105]
-INFO: [Synth 8-3491] module 'rom1' declared at 'E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.runs/synth_1/.Xil/Vivado-4212-DESKTOP-88C58FM/realtime/rom1_stub.vhdl:6' bound to instance 'rom_inst' of component 'rom1' [E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/CHAR_GEN.vhd:105]
-INFO: [Synth 8-3491] module 'rom1' declared at 'E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.runs/synth_1/.Xil/Vivado-4212-DESKTOP-88C58FM/realtime/rom1_stub.vhdl:6' bound to instance 'rom_inst' of component 'rom1' [E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/CHAR_GEN.vhd:105]
-INFO: [Synth 8-3491] module 'rom1' declared at 'E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.runs/synth_1/.Xil/Vivado-4212-DESKTOP-88C58FM/realtime/rom1_stub.vhdl:6' bound to instance 'rom_inst' of component 'rom1' [E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/CHAR_GEN.vhd:105]
-INFO: [Synth 8-3491] module 'rom1' declared at 'E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.runs/synth_1/.Xil/Vivado-4212-DESKTOP-88C58FM/realtime/rom1_stub.vhdl:6' bound to instance 'rom_inst' of component 'rom1' [E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/CHAR_GEN.vhd:105]
-INFO: [Synth 8-3491] module 'rom1' declared at 'E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.runs/synth_1/.Xil/Vivado-4212-DESKTOP-88C58FM/realtime/rom1_stub.vhdl:6' bound to instance 'rom_inst' of component 'rom1' [E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/CHAR_GEN.vhd:105]
-INFO: [Synth 8-3491] module 'rom1' declared at 'E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.runs/synth_1/.Xil/Vivado-4212-DESKTOP-88C58FM/realtime/rom1_stub.vhdl:6' bound to instance 'rom_inst' of component 'rom1' [E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/CHAR_GEN.vhd:105]
-INFO: [Synth 8-3491] module 'rom1' declared at 'E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.runs/synth_1/.Xil/Vivado-4212-DESKTOP-88C58FM/realtime/rom1_stub.vhdl:6' bound to instance 'rom_inst' of component 'rom1' [E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/CHAR_GEN.vhd:105]
-INFO: [Synth 8-3491] module 'rom1' declared at 'E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.runs/synth_1/.Xil/Vivado-4212-DESKTOP-88C58FM/realtime/rom1_stub.vhdl:6' bound to instance 'rom_inst' of component 'rom1' [E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/CHAR_GEN.vhd:105]
-INFO: [Synth 8-3491] module 'rom1' declared at 'E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.runs/synth_1/.Xil/Vivado-4212-DESKTOP-88C58FM/realtime/rom1_stub.vhdl:6' bound to instance 'rom_inst' of component 'rom1' [E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/CHAR_GEN.vhd:105]
-INFO: [Synth 8-3491] module 'rom1' declared at 'E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.runs/synth_1/.Xil/Vivado-4212-DESKTOP-88C58FM/realtime/rom1_stub.vhdl:6' bound to instance 'rom_inst' of component 'rom1' [E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/CHAR_GEN.vhd:105]
-INFO: [Synth 8-256] done synthesizing module 'CHAR_GEN' (0#1) [E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/CHAR_GEN.vhd:47]
-INFO: [Synth 8-3491] module 'audio_playback' declared at 'E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/audio_playback.vhd:34' bound to instance 'A1' of component 'audio_playback' [E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/VGA_To_HDMI.vhd:175]
-INFO: [Synth 8-638] synthesizing module 'audio_playback' [E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/audio_playback.vhd:43]
-INFO: [Synth 8-3491] module 'audio_rom' declared at 'E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.runs/synth_1/.Xil/Vivado-4212-DESKTOP-88C58FM/realtime/audio_rom_stub.vhdl:6' bound to instance 'audio_inst' of component 'audio_rom' [E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/audio_playback.vhd:75]
-INFO: [Synth 8-638] synthesizing module 'audio_rom' [E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.runs/synth_1/.Xil/Vivado-4212-DESKTOP-88C58FM/realtime/audio_rom_stub.vhdl:15]
-INFO: [Synth 8-256] done synthesizing module 'audio_playback' (0#1) [E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/audio_playback.vhd:43]
-INFO: [Synth 8-3491] module 'MY_PIXEL_DRIVER' declared at 'E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/MY_PIXEL_DRIVER.vhd:33' bound to instance 'M1' of component 'MY_PIXEL_DRIVER' [E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/VGA_To_HDMI.vhd:183]
-INFO: [Synth 8-638] synthesizing module 'MY_PIXEL_DRIVER' [E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/MY_PIXEL_DRIVER.vhd:45]
-INFO: [Synth 8-3491] module 'draw_background' declared at 'E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/draw_background.vhd:30' bound to instance 'BG' of component 'draw_background' [E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/MY_PIXEL_DRIVER.vhd:135]
-INFO: [Synth 8-638] synthesizing module 'draw_background' [E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/draw_background.vhd:41]
-INFO: [Synth 8-256] done synthesizing module 'draw_background' (0#1) [E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/draw_background.vhd:41]
-INFO: [Synth 8-3491] module 'draw_chain' declared at 'E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/draw_chain.vhd:28' bound to instance 'CHAIN' of component 'draw_chain' [E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/MY_PIXEL_DRIVER.vhd:147]
-INFO: [Synth 8-638] synthesizing module 'draw_chain' [E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/draw_chain.vhd:42]
-INFO: [Synth 8-226] default block is never used [E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/draw_chain.vhd:254]
-INFO: [Synth 8-226] default block is never used [E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/draw_chain.vhd:300]
-WARNING: [Synth 8-614] signal 'bmap_x1' is read in the process but is not in the sensitivity list [E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/draw_chain.vhd:375]
-WARNING: [Synth 8-614] signal 'bmap_y1' is read in the process but is not in the sensitivity list [E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/draw_chain.vhd:375]
-WARNING: [Synth 8-614] signal 'bmap_x2' is read in the process but is not in the sensitivity list [E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/draw_chain.vhd:407]
-WARNING: [Synth 8-614] signal 'bmap_y2' is read in the process but is not in the sensitivity list [E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/draw_chain.vhd:407]
-WARNING: [Synth 8-614] signal 'bmap_x3' is read in the process but is not in the sensitivity list [E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/draw_chain.vhd:438]
-WARNING: [Synth 8-614] signal 'bmap_y3' is read in the process but is not in the sensitivity list [E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/draw_chain.vhd:438]
-WARNING: [Synth 8-614] signal 'bmap_x4' is read in the process but is not in the sensitivity list [E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/draw_chain.vhd:469]
-WARNING: [Synth 8-614] signal 'bmap_y4' is read in the process but is not in the sensitivity list [E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/draw_chain.vhd:469]
-WARNING: [Synth 8-614] signal 'bmap_x5' is read in the process but is not in the sensitivity list [E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/draw_chain.vhd:499]
-WARNING: [Synth 8-614] signal 'bmap_y5' is read in the process but is not in the sensitivity list [E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/draw_chain.vhd:499]
-WARNING: [Synth 8-614] signal 'bmap_x6' is read in the process but is not in the sensitivity list [E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/draw_chain.vhd:530]
-WARNING: [Synth 8-614] signal 'bmap_y6' is read in the process but is not in the sensitivity list [E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/draw_chain.vhd:530]
-WARNING: [Synth 8-614] signal 'bmap_x7' is read in the process but is not in the sensitivity list [E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/draw_chain.vhd:561]
-WARNING: [Synth 8-614] signal 'bmap_y7' is read in the process but is not in the sensitivity list [E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/draw_chain.vhd:561]
-WARNING: [Synth 8-614] signal 'bmap_x_ball' is read in the process but is not in the sensitivity list [E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/draw_chain.vhd:592]
-WARNING: [Synth 8-614] signal 'bmap_y_ball' is read in the process but is not in the sensitivity list [E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/draw_chain.vhd:592]
-INFO: [Synth 8-3491] module 'chain_bram' declared at 'E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/chain_bram.vhd:41' bound to instance 'BRAM1' of component 'chain_bram' [E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/draw_chain.vhd:627]
-INFO: [Synth 8-638] synthesizing module 'chain_bram' [E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/chain_bram.vhd:50]
-INFO: [Synth 8-256] done synthesizing module 'chain_bram' (0#1) [E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/chain_bram.vhd:50]
-INFO: [Synth 8-3491] module 'chain_bram' declared at 'E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/chain_bram.vhd:41' bound to instance 'BRAM2' of component 'chain_bram' [E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/draw_chain.vhd:635]
-INFO: [Synth 8-3491] module 'chain_bram' declared at 'E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/chain_bram.vhd:41' bound to instance 'BRAM3' of component 'chain_bram' [E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/draw_chain.vhd:643]
-INFO: [Synth 8-3491] module 'chain_bram' declared at 'E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/chain_bram.vhd:41' bound to instance 'BRAM4' of component 'chain_bram' [E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/draw_chain.vhd:651]
-INFO: [Synth 8-3491] module 'chain_bram' declared at 'E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/chain_bram.vhd:41' bound to instance 'BRAM5' of component 'chain_bram' [E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/draw_chain.vhd:659]
-INFO: [Synth 8-3491] module 'chain_bram' declared at 'E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/chain_bram.vhd:41' bound to instance 'BRAM6' of component 'chain_bram' [E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/draw_chain.vhd:667]
-INFO: [Synth 8-3491] module 'chain_bram' declared at 'E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/chain_bram.vhd:41' bound to instance 'BRAM7' of component 'chain_bram' [E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/draw_chain.vhd:675]
-INFO: [Synth 8-3491] module 'chain_bram' declared at 'E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/chain_bram.vhd:41' bound to instance 'BALLBRAM1' of component 'chain_bram' [E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/draw_chain.vhd:683]
-WARNING: [Synth 8-614] signal 'rst' is read in the process but is not in the sensitivity list [E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/draw_chain.vhd:700]
-INFO: [Synth 8-256] done synthesizing module 'draw_chain' (0#1) [E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/draw_chain.vhd:42]
-INFO: [Synth 8-3491] module 'draw_wario' declared at 'E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/draw_wario.vhd:48' bound to instance 'WARIO' of component 'draw_wario' [E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/MY_PIXEL_DRIVER.vhd:163]
-INFO: [Synth 8-638] synthesizing module 'draw_wario' [E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/draw_wario.vhd:63]
-WARNING: [Synth 8-614] signal 'bmap_x' is read in the process but is not in the sensitivity list [E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/draw_wario.vhd:262]
-WARNING: [Synth 8-614] signal 'bmap_y' is read in the process but is not in the sensitivity list [E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/draw_wario.vhd:262]
-INFO: [Synth 8-3491] module 'sprite_bram' declared at 'E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/sprite_bram.vhd:57' bound to instance 'BRAM00' of component 'sprite_bram' [E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/draw_wario.vhd:295]
-INFO: [Synth 8-638] synthesizing module 'sprite_bram' [E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/sprite_bram.vhd:66]
-INFO: [Synth 8-256] done synthesizing module 'sprite_bram' (0#1) [E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/sprite_bram.vhd:66]
-WARNING: [Synth 8-614] signal 'rst' is read in the process but is not in the sensitivity list [E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/draw_wario.vhd:308]
-INFO: [Synth 8-256] done synthesizing module 'draw_wario' (0#1) [E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/draw_wario.vhd:63]
-WARNING: [Synth 8-614] signal 'hit_detected' is read in the process but is not in the sensitivity list [E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/MY_PIXEL_DRIVER.vhd:313]
-WARNING: [Synth 8-614] signal 'game_won_count' is read in the process but is not in the sensitivity list [E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/MY_PIXEL_DRIVER.vhd:313]
-WARNING: [Synth 8-614] signal 'chain_enable' is read in the process but is not in the sensitivity list [E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/MY_PIXEL_DRIVER.vhd:397]
-WARNING: [Synth 8-614] signal 'alpha_chain' is read in the process but is not in the sensitivity list [E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/MY_PIXEL_DRIVER.vhd:397]
-WARNING: [Synth 8-614] signal 'wario_enable' is read in the process but is not in the sensitivity list [E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/MY_PIXEL_DRIVER.vhd:397]
-WARNING: [Synth 8-614] signal 'alpha_wario' is read in the process but is not in the sensitivity list [E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/MY_PIXEL_DRIVER.vhd:397]
-WARNING: [Synth 8-614] signal 'char_enable' is read in the process but is not in the sensitivity list [E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/MY_PIXEL_DRIVER.vhd:397]
-INFO: [Synth 8-256] done synthesizing module 'MY_PIXEL_DRIVER' (0#1) [E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/MY_PIXEL_DRIVER.vhd:45]
-INFO: [Synth 8-3491] module 'hdmi_tx_0' declared at 'E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.runs/synth_1/.Xil/Vivado-4212-DESKTOP-88C58FM/realtime/hdmi_tx_0_stub.vhdl:6' bound to instance 'H1' of component 'hdmi_tx_0' [E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/VGA_To_HDMI.vhd:210]
-INFO: [Synth 8-638] synthesizing module 'hdmi_tx_0' [E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.runs/synth_1/.Xil/Vivado-4212-DESKTOP-88C58FM/realtime/hdmi_tx_0_stub.vhdl:30]
-INFO: [Synth 8-256] done synthesizing module 'VGA_To_HDMI' (0#1) [E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/VGA_To_HDMI.vhd:39]
-WARNING: [Synth 8-6014] Unused sequential element counter_reg was removed.  [E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/draw_chain.vhd:192]
-WARNING: [Synth 8-6014] Unused sequential element clk_60fps_reg was removed.  [E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/draw_chain.vhd:193]
+WARNING: [Synth 8-9112] actual for formal port 'sx' is neither a static name nor a globally static expression [E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/MY_PIXEL_DRIVER.vhd:153]
+WARNING: [Synth 8-9112] actual for formal port 'sy' is neither a static name nor a globally static expression [E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/MY_PIXEL_DRIVER.vhd:154]
+WARNING: [Synth 8-9112] actual for formal port 'sx' is neither a static name nor a globally static expression [E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/MY_PIXEL_DRIVER.vhd:169]
+WARNING: [Synth 8-9112] actual for formal port 'sy' is neither a static name nor a globally static expression [E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/MY_PIXEL_DRIVER.vhd:170]
+INFO: [Synth 8-638] synthesizing module 'VGA_To_HDMI' [E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/VGA_To_HDMI.vhd:39]
+INFO: [Synth 8-638] synthesizing module 'clk_divide_125Hz' [E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/clk_divide_125Hz.vhd:47]
+INFO: [Synth 8-256] done synthesizing module 'clk_divide_125Hz' (0#1) [E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/clk_divide_125Hz.vhd:47]
+INFO: [Synth 8-638] synthesizing module 'debouncer' [E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/debouncer.vhd:41]
+INFO: [Synth 8-226] default block is never used [E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/debouncer.vhd:60]
+INFO: [Synth 8-256] done synthesizing module 'debouncer' (0#1) [E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/debouncer.vhd:41]
+INFO: [Synth 8-3491] module 'clk_wiz_0' declared at 'E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.runs/synth_1/.Xil/Vivado-31200-DESKTOP-88C58FM/realtime/clk_wiz_0_stub.vhdl:6' bound to instance 'C1' of component 'clk_wiz_0' [E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/VGA_To_HDMI.vhd:144]
+INFO: [Synth 8-638] synthesizing module 'clk_wiz_0' [E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.runs/synth_1/.Xil/Vivado-31200-DESKTOP-88C58FM/realtime/clk_wiz_0_stub.vhdl:17]
+INFO: [Synth 8-3491] module 'vga_controller_640_60' declared at 'E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/vga_controller_640_60.vhd:75' bound to instance 'V1' of component 'vga_controller_640_60' [E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/VGA_To_HDMI.vhd:154]
+INFO: [Synth 8-638] synthesizing module 'vga_controller_640_60' [E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/vga_controller_640_60.vhd:88]
+INFO: [Synth 8-256] done synthesizing module 'vga_controller_640_60' (0#1) [E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/vga_controller_640_60.vhd:88]
+INFO: [Synth 8-3491] module 'CHAR_GEN' declared at 'E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/CHAR_GEN.vhd:38' bound to instance 'G1' of component 'CHAR_GEN' [E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/VGA_To_HDMI.vhd:165]
+INFO: [Synth 8-638] synthesizing module 'CHAR_GEN' [E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/CHAR_GEN.vhd:47]
+INFO: [Synth 8-3491] module 'rom1' declared at 'E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.runs/synth_1/.Xil/Vivado-31200-DESKTOP-88C58FM/realtime/rom1_stub.vhdl:6' bound to instance 'rom_inst' of component 'rom1' [E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/CHAR_GEN.vhd:105]
+INFO: [Synth 8-638] synthesizing module 'rom1' [E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.runs/synth_1/.Xil/Vivado-31200-DESKTOP-88C58FM/realtime/rom1_stub.vhdl:15]
+INFO: [Synth 8-3491] module 'rom1' declared at 'E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.runs/synth_1/.Xil/Vivado-31200-DESKTOP-88C58FM/realtime/rom1_stub.vhdl:6' bound to instance 'rom_inst' of component 'rom1' [E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/CHAR_GEN.vhd:105]
+INFO: [Synth 8-3491] module 'rom1' declared at 'E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.runs/synth_1/.Xil/Vivado-31200-DESKTOP-88C58FM/realtime/rom1_stub.vhdl:6' bound to instance 'rom_inst' of component 'rom1' [E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/CHAR_GEN.vhd:105]
+INFO: [Synth 8-3491] module 'rom1' declared at 'E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.runs/synth_1/.Xil/Vivado-31200-DESKTOP-88C58FM/realtime/rom1_stub.vhdl:6' bound to instance 'rom_inst' of component 'rom1' [E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/CHAR_GEN.vhd:105]
+INFO: [Synth 8-3491] module 'rom1' declared at 'E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.runs/synth_1/.Xil/Vivado-31200-DESKTOP-88C58FM/realtime/rom1_stub.vhdl:6' bound to instance 'rom_inst' of component 'rom1' [E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/CHAR_GEN.vhd:105]
+INFO: [Synth 8-3491] module 'rom1' declared at 'E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.runs/synth_1/.Xil/Vivado-31200-DESKTOP-88C58FM/realtime/rom1_stub.vhdl:6' bound to instance 'rom_inst' of component 'rom1' [E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/CHAR_GEN.vhd:105]
+INFO: [Synth 8-3491] module 'rom1' declared at 'E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.runs/synth_1/.Xil/Vivado-31200-DESKTOP-88C58FM/realtime/rom1_stub.vhdl:6' bound to instance 'rom_inst' of component 'rom1' [E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/CHAR_GEN.vhd:105]
+INFO: [Synth 8-3491] module 'rom1' declared at 'E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.runs/synth_1/.Xil/Vivado-31200-DESKTOP-88C58FM/realtime/rom1_stub.vhdl:6' bound to instance 'rom_inst' of component 'rom1' [E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/CHAR_GEN.vhd:105]
+INFO: [Synth 8-3491] module 'rom1' declared at 'E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.runs/synth_1/.Xil/Vivado-31200-DESKTOP-88C58FM/realtime/rom1_stub.vhdl:6' bound to instance 'rom_inst' of component 'rom1' [E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/CHAR_GEN.vhd:105]
+INFO: [Synth 8-3491] module 'rom1' declared at 'E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.runs/synth_1/.Xil/Vivado-31200-DESKTOP-88C58FM/realtime/rom1_stub.vhdl:6' bound to instance 'rom_inst' of component 'rom1' [E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/CHAR_GEN.vhd:105]
+INFO: [Synth 8-3491] module 'rom1' declared at 'E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.runs/synth_1/.Xil/Vivado-31200-DESKTOP-88C58FM/realtime/rom1_stub.vhdl:6' bound to instance 'rom_inst' of component 'rom1' [E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/CHAR_GEN.vhd:105]
+INFO: [Synth 8-3491] module 'rom1' declared at 'E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.runs/synth_1/.Xil/Vivado-31200-DESKTOP-88C58FM/realtime/rom1_stub.vhdl:6' bound to instance 'rom_inst' of component 'rom1' [E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/CHAR_GEN.vhd:105]
+INFO: [Synth 8-3491] module 'rom1' declared at 'E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.runs/synth_1/.Xil/Vivado-31200-DESKTOP-88C58FM/realtime/rom1_stub.vhdl:6' bound to instance 'rom_inst' of component 'rom1' [E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/CHAR_GEN.vhd:105]
+INFO: [Synth 8-3491] module 'rom1' declared at 'E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.runs/synth_1/.Xil/Vivado-31200-DESKTOP-88C58FM/realtime/rom1_stub.vhdl:6' bound to instance 'rom_inst' of component 'rom1' [E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/CHAR_GEN.vhd:105]
+INFO: [Synth 8-256] done synthesizing module 'CHAR_GEN' (0#1) [E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/CHAR_GEN.vhd:47]
+INFO: [Synth 8-3491] module 'audio_playback' declared at 'E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/audio_playback.vhd:5' bound to instance 'A1' of component 'audio_playback' [E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/VGA_To_HDMI.vhd:175]
+INFO: [Synth 8-638] synthesizing module 'audio_playback' [E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/audio_playback.vhd:14]
+INFO: [Synth 8-3491] module 'audio_rom' declared at 'E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.runs/synth_1/.Xil/Vivado-31200-DESKTOP-88C58FM/realtime/audio_rom_stub.vhdl:6' bound to instance 'audio_inst' of component 'audio_rom' [E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/audio_playback.vhd:43]
+INFO: [Synth 8-638] synthesizing module 'audio_rom' [E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.runs/synth_1/.Xil/Vivado-31200-DESKTOP-88C58FM/realtime/audio_rom_stub.vhdl:15]
+INFO: [Synth 8-256] done synthesizing module 'audio_playback' (0#1) [E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/audio_playback.vhd:14]
+INFO: [Synth 8-3491] module 'MY_PIXEL_DRIVER' declared at 'E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/MY_PIXEL_DRIVER.vhd:33' bound to instance 'M1' of component 'MY_PIXEL_DRIVER' [E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/VGA_To_HDMI.vhd:183]
+INFO: [Synth 8-638] synthesizing module 'MY_PIXEL_DRIVER' [E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/MY_PIXEL_DRIVER.vhd:45]
+INFO: [Synth 8-3491] module 'draw_background' declared at 'E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/draw_background.vhd:30' bound to instance 'BG' of component 'draw_background' [E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/MY_PIXEL_DRIVER.vhd:135]
+INFO: [Synth 8-638] synthesizing module 'draw_background' [E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/draw_background.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'draw_background' (0#1) [E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/draw_background.vhd:41]
+INFO: [Synth 8-3491] module 'draw_chain' declared at 'E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/draw_chain.vhd:28' bound to instance 'CHAIN' of component 'draw_chain' [E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/MY_PIXEL_DRIVER.vhd:147]
+INFO: [Synth 8-638] synthesizing module 'draw_chain' [E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/draw_chain.vhd:42]
+INFO: [Synth 8-226] default block is never used [E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/draw_chain.vhd:254]
+INFO: [Synth 8-226] default block is never used [E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/draw_chain.vhd:300]
+WARNING: [Synth 8-614] signal 'bmap_x1' is read in the process but is not in the sensitivity list [E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/draw_chain.vhd:375]
+WARNING: [Synth 8-614] signal 'bmap_y1' is read in the process but is not in the sensitivity list [E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/draw_chain.vhd:375]
+WARNING: [Synth 8-614] signal 'bmap_x2' is read in the process but is not in the sensitivity list [E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/draw_chain.vhd:407]
+WARNING: [Synth 8-614] signal 'bmap_y2' is read in the process but is not in the sensitivity list [E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/draw_chain.vhd:407]
+WARNING: [Synth 8-614] signal 'bmap_x3' is read in the process but is not in the sensitivity list [E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/draw_chain.vhd:438]
+WARNING: [Synth 8-614] signal 'bmap_y3' is read in the process but is not in the sensitivity list [E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/draw_chain.vhd:438]
+WARNING: [Synth 8-614] signal 'bmap_x4' is read in the process but is not in the sensitivity list [E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/draw_chain.vhd:469]
+WARNING: [Synth 8-614] signal 'bmap_y4' is read in the process but is not in the sensitivity list [E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/draw_chain.vhd:469]
+WARNING: [Synth 8-614] signal 'bmap_x5' is read in the process but is not in the sensitivity list [E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/draw_chain.vhd:499]
+WARNING: [Synth 8-614] signal 'bmap_y5' is read in the process but is not in the sensitivity list [E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/draw_chain.vhd:499]
+WARNING: [Synth 8-614] signal 'bmap_x6' is read in the process but is not in the sensitivity list [E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/draw_chain.vhd:530]
+WARNING: [Synth 8-614] signal 'bmap_y6' is read in the process but is not in the sensitivity list [E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/draw_chain.vhd:530]
+WARNING: [Synth 8-614] signal 'bmap_x7' is read in the process but is not in the sensitivity list [E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/draw_chain.vhd:561]
+WARNING: [Synth 8-614] signal 'bmap_y7' is read in the process but is not in the sensitivity list [E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/draw_chain.vhd:561]
+WARNING: [Synth 8-614] signal 'bmap_x_ball' is read in the process but is not in the sensitivity list [E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/draw_chain.vhd:592]
+WARNING: [Synth 8-614] signal 'bmap_y_ball' is read in the process but is not in the sensitivity list [E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/draw_chain.vhd:592]
+INFO: [Synth 8-3491] module 'chain_bram' declared at 'E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/chain_bram.vhd:41' bound to instance 'BRAM1' of component 'chain_bram' [E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/draw_chain.vhd:627]
+INFO: [Synth 8-638] synthesizing module 'chain_bram' [E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/chain_bram.vhd:50]
+INFO: [Synth 8-256] done synthesizing module 'chain_bram' (0#1) [E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/chain_bram.vhd:50]
+INFO: [Synth 8-3491] module 'chain_bram' declared at 'E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/chain_bram.vhd:41' bound to instance 'BRAM2' of component 'chain_bram' [E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/draw_chain.vhd:635]
+INFO: [Synth 8-3491] module 'chain_bram' declared at 'E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/chain_bram.vhd:41' bound to instance 'BRAM3' of component 'chain_bram' [E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/draw_chain.vhd:643]
+INFO: [Synth 8-3491] module 'chain_bram' declared at 'E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/chain_bram.vhd:41' bound to instance 'BRAM4' of component 'chain_bram' [E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/draw_chain.vhd:651]
+INFO: [Synth 8-3491] module 'chain_bram' declared at 'E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/chain_bram.vhd:41' bound to instance 'BRAM5' of component 'chain_bram' [E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/draw_chain.vhd:659]
+INFO: [Synth 8-3491] module 'chain_bram' declared at 'E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/chain_bram.vhd:41' bound to instance 'BRAM6' of component 'chain_bram' [E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/draw_chain.vhd:667]
+INFO: [Synth 8-3491] module 'chain_bram' declared at 'E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/chain_bram.vhd:41' bound to instance 'BRAM7' of component 'chain_bram' [E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/draw_chain.vhd:675]
+INFO: [Synth 8-3491] module 'chain_bram' declared at 'E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/chain_bram.vhd:41' bound to instance 'BALLBRAM1' of component 'chain_bram' [E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/draw_chain.vhd:683]
+WARNING: [Synth 8-614] signal 'rst' is read in the process but is not in the sensitivity list [E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/draw_chain.vhd:700]
+INFO: [Synth 8-256] done synthesizing module 'draw_chain' (0#1) [E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/draw_chain.vhd:42]
+INFO: [Synth 8-3491] module 'draw_wario' declared at 'E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/draw_wario.vhd:48' bound to instance 'WARIO' of component 'draw_wario' [E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/MY_PIXEL_DRIVER.vhd:163]
+INFO: [Synth 8-638] synthesizing module 'draw_wario' [E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/draw_wario.vhd:63]
+WARNING: [Synth 8-614] signal 'bmap_x' is read in the process but is not in the sensitivity list [E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/draw_wario.vhd:262]
+WARNING: [Synth 8-614] signal 'bmap_y' is read in the process but is not in the sensitivity list [E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/draw_wario.vhd:262]
+INFO: [Synth 8-3491] module 'sprite_bram' declared at 'E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/sprite_bram.vhd:57' bound to instance 'BRAM00' of component 'sprite_bram' [E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/draw_wario.vhd:295]
+INFO: [Synth 8-638] synthesizing module 'sprite_bram' [E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/sprite_bram.vhd:66]
+INFO: [Synth 8-256] done synthesizing module 'sprite_bram' (0#1) [E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/sprite_bram.vhd:66]
+WARNING: [Synth 8-614] signal 'rst' is read in the process but is not in the sensitivity list [E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/draw_wario.vhd:308]
+INFO: [Synth 8-256] done synthesizing module 'draw_wario' (0#1) [E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/draw_wario.vhd:63]
+WARNING: [Synth 8-614] signal 'hit_detected' is read in the process but is not in the sensitivity list [E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/MY_PIXEL_DRIVER.vhd:313]
+WARNING: [Synth 8-614] signal 'game_won_count' is read in the process but is not in the sensitivity list [E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/MY_PIXEL_DRIVER.vhd:313]
+WARNING: [Synth 8-614] signal 'chain_enable' is read in the process but is not in the sensitivity list [E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/MY_PIXEL_DRIVER.vhd:397]
+WARNING: [Synth 8-614] signal 'alpha_chain' is read in the process but is not in the sensitivity list [E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/MY_PIXEL_DRIVER.vhd:397]
+WARNING: [Synth 8-614] signal 'wario_enable' is read in the process but is not in the sensitivity list [E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/MY_PIXEL_DRIVER.vhd:397]
+WARNING: [Synth 8-614] signal 'alpha_wario' is read in the process but is not in the sensitivity list [E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/MY_PIXEL_DRIVER.vhd:397]
+WARNING: [Synth 8-614] signal 'char_enable' is read in the process but is not in the sensitivity list [E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/MY_PIXEL_DRIVER.vhd:397]
+INFO: [Synth 8-256] done synthesizing module 'MY_PIXEL_DRIVER' (0#1) [E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/MY_PIXEL_DRIVER.vhd:45]
+INFO: [Synth 8-3491] module 'hdmi_tx_0' declared at 'E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.runs/synth_1/.Xil/Vivado-31200-DESKTOP-88C58FM/realtime/hdmi_tx_0_stub.vhdl:6' bound to instance 'H1' of component 'hdmi_tx_0' [E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/VGA_To_HDMI.vhd:210]
+INFO: [Synth 8-638] synthesizing module 'hdmi_tx_0' [E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.runs/synth_1/.Xil/Vivado-31200-DESKTOP-88C58FM/realtime/hdmi_tx_0_stub.vhdl:30]
+INFO: [Synth 8-256] done synthesizing module 'VGA_To_HDMI' (0#1) [E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/VGA_To_HDMI.vhd:39]
+WARNING: [Synth 8-6014] Unused sequential element counter_reg was removed.  [E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/draw_chain.vhd:192]
+WARNING: [Synth 8-6014] Unused sequential element clk_60fps_reg was removed.  [E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.srcs/sources_1/new/draw_chain.vhd:193]
 WARNING: [Synth 8-7129] Port vsync in module draw_background is either unconnected or has no load
 WARNING: [Synth 8-7129] Port clk in module MY_PIXEL_DRIVER is either unconnected or has no load
 WARNING: [Synth 8-7129] Port blank in module CHAR_GEN is either unconnected or has no load
 WARNING: [Synth 8-7129] Port reset in module debouncer is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1455.379 ; gain = 602.285
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1455.691 ; gain = 603.938
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1455.379 ; gain = 602.285
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1455.691 ; gain = 603.938
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1455.379 ; gain = 602.285
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1455.691 ; gain = 603.938
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.063 . Memory (MB): peak = 1455.379 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.060 . Memory (MB): peak = 1455.691 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [e:/Projects/FPGA/Sparring_Wario/Sparring_Wario.gen/sources_1/ip/hdmi_tx_0/hdmi_tx_0/hdmi_tx_0_in_context.xdc] for cell 'H1'
-Finished Parsing XDC File [e:/Projects/FPGA/Sparring_Wario/Sparring_Wario.gen/sources_1/ip/hdmi_tx_0/hdmi_tx_0/hdmi_tx_0_in_context.xdc] for cell 'H1'
-Parsing XDC File [e:/Projects/FPGA/Sparring_Wario/Sparring_Wario.gen/sources_1/ip/rom1/rom1/rom1_in_context.xdc] for cell 'G1/CHAR_LOOP[0].rom_inst'
-Finished Parsing XDC File [e:/Projects/FPGA/Sparring_Wario/Sparring_Wario.gen/sources_1/ip/rom1/rom1/rom1_in_context.xdc] for cell 'G1/CHAR_LOOP[0].rom_inst'
-Parsing XDC File [e:/Projects/FPGA/Sparring_Wario/Sparring_Wario.gen/sources_1/ip/rom1/rom1/rom1_in_context.xdc] for cell 'G1/CHAR_LOOP[1].rom_inst'
-Finished Parsing XDC File [e:/Projects/FPGA/Sparring_Wario/Sparring_Wario.gen/sources_1/ip/rom1/rom1/rom1_in_context.xdc] for cell 'G1/CHAR_LOOP[1].rom_inst'
-Parsing XDC File [e:/Projects/FPGA/Sparring_Wario/Sparring_Wario.gen/sources_1/ip/rom1/rom1/rom1_in_context.xdc] for cell 'G1/CHAR_LOOP[2].rom_inst'
-Finished Parsing XDC File [e:/Projects/FPGA/Sparring_Wario/Sparring_Wario.gen/sources_1/ip/rom1/rom1/rom1_in_context.xdc] for cell 'G1/CHAR_LOOP[2].rom_inst'
-Parsing XDC File [e:/Projects/FPGA/Sparring_Wario/Sparring_Wario.gen/sources_1/ip/rom1/rom1/rom1_in_context.xdc] for cell 'G1/CHAR_LOOP[3].rom_inst'
-Finished Parsing XDC File [e:/Projects/FPGA/Sparring_Wario/Sparring_Wario.gen/sources_1/ip/rom1/rom1/rom1_in_context.xdc] for cell 'G1/CHAR_LOOP[3].rom_inst'
-Parsing XDC File [e:/Projects/FPGA/Sparring_Wario/Sparring_Wario.gen/sources_1/ip/rom1/rom1/rom1_in_context.xdc] for cell 'G1/CHAR_LOOP[4].rom_inst'
-Finished Parsing XDC File [e:/Projects/FPGA/Sparring_Wario/Sparring_Wario.gen/sources_1/ip/rom1/rom1/rom1_in_context.xdc] for cell 'G1/CHAR_LOOP[4].rom_inst'
-Parsing XDC File [e:/Projects/FPGA/Sparring_Wario/Sparring_Wario.gen/sources_1/ip/rom1/rom1/rom1_in_context.xdc] for cell 'G1/CHAR_LOOP[5].rom_inst'
-Finished Parsing XDC File [e:/Projects/FPGA/Sparring_Wario/Sparring_Wario.gen/sources_1/ip/rom1/rom1/rom1_in_context.xdc] for cell 'G1/CHAR_LOOP[5].rom_inst'
-Parsing XDC File [e:/Projects/FPGA/Sparring_Wario/Sparring_Wario.gen/sources_1/ip/rom1/rom1/rom1_in_context.xdc] for cell 'G1/CHAR_LOOP[6].rom_inst'
-Finished Parsing XDC File [e:/Projects/FPGA/Sparring_Wario/Sparring_Wario.gen/sources_1/ip/rom1/rom1/rom1_in_context.xdc] for cell 'G1/CHAR_LOOP[6].rom_inst'
-Parsing XDC File [e:/Projects/FPGA/Sparring_Wario/Sparring_Wario.gen/sources_1/ip/rom1/rom1/rom1_in_context.xdc] for cell 'G1/CHAR_LOOP[7].rom_inst'
-Finished Parsing XDC File [e:/Projects/FPGA/Sparring_Wario/Sparring_Wario.gen/sources_1/ip/rom1/rom1/rom1_in_context.xdc] for cell 'G1/CHAR_LOOP[7].rom_inst'
-Parsing XDC File [e:/Projects/FPGA/Sparring_Wario/Sparring_Wario.gen/sources_1/ip/rom1/rom1/rom1_in_context.xdc] for cell 'G1/CHAR_LOOP[8].rom_inst'
-Finished Parsing XDC File [e:/Projects/FPGA/Sparring_Wario/Sparring_Wario.gen/sources_1/ip/rom1/rom1/rom1_in_context.xdc] for cell 'G1/CHAR_LOOP[8].rom_inst'
-Parsing XDC File [e:/Projects/FPGA/Sparring_Wario/Sparring_Wario.gen/sources_1/ip/rom1/rom1/rom1_in_context.xdc] for cell 'G1/CHAR_LOOP[9].rom_inst'
-Finished Parsing XDC File [e:/Projects/FPGA/Sparring_Wario/Sparring_Wario.gen/sources_1/ip/rom1/rom1/rom1_in_context.xdc] for cell 'G1/CHAR_LOOP[9].rom_inst'
-Parsing XDC File [e:/Projects/FPGA/Sparring_Wario/Sparring_Wario.gen/sources_1/ip/rom1/rom1/rom1_in_context.xdc] for cell 'G1/CHAR_LOOP[10].rom_inst'
-Finished Parsing XDC File [e:/Projects/FPGA/Sparring_Wario/Sparring_Wario.gen/sources_1/ip/rom1/rom1/rom1_in_context.xdc] for cell 'G1/CHAR_LOOP[10].rom_inst'
-Parsing XDC File [e:/Projects/FPGA/Sparring_Wario/Sparring_Wario.gen/sources_1/ip/rom1/rom1/rom1_in_context.xdc] for cell 'G1/CHAR_LOOP[11].rom_inst'
-Finished Parsing XDC File [e:/Projects/FPGA/Sparring_Wario/Sparring_Wario.gen/sources_1/ip/rom1/rom1/rom1_in_context.xdc] for cell 'G1/CHAR_LOOP[11].rom_inst'
-Parsing XDC File [e:/Projects/FPGA/Sparring_Wario/Sparring_Wario.gen/sources_1/ip/rom1/rom1/rom1_in_context.xdc] for cell 'G1/CHAR_LOOP[12].rom_inst'
-Finished Parsing XDC File [e:/Projects/FPGA/Sparring_Wario/Sparring_Wario.gen/sources_1/ip/rom1/rom1/rom1_in_context.xdc] for cell 'G1/CHAR_LOOP[12].rom_inst'
-Parsing XDC File [e:/Projects/FPGA/Sparring_Wario/Sparring_Wario.gen/sources_1/ip/rom1/rom1/rom1_in_context.xdc] for cell 'G1/CHAR_LOOP[13].rom_inst'
-Finished Parsing XDC File [e:/Projects/FPGA/Sparring_Wario/Sparring_Wario.gen/sources_1/ip/rom1/rom1/rom1_in_context.xdc] for cell 'G1/CHAR_LOOP[13].rom_inst'
-Parsing XDC File [e:/Projects/FPGA/Sparring_Wario/Sparring_Wario.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'C1'
-Finished Parsing XDC File [e:/Projects/FPGA/Sparring_Wario/Sparring_Wario.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'C1'
-Parsing XDC File [e:/Projects/FPGA/Sparring_Wario/Sparring_Wario.gen/sources_1/ip/audio_rom/audio_rom/audio_rom_in_context.xdc] for cell 'A1/audio_inst'
-Finished Parsing XDC File [e:/Projects/FPGA/Sparring_Wario/Sparring_Wario.gen/sources_1/ip/audio_rom/audio_rom/audio_rom_in_context.xdc] for cell 'A1/audio_inst'
-Parsing XDC File [E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/constrs_1/new/vga_pins.xdc]
-Finished Parsing XDC File [E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/constrs_1/new/vga_pins.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.srcs/constrs_1/new/vga_pins.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/VGA_To_HDMI_propImpl.xdc].
+Parsing XDC File [e:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.gen/sources_1/ip/hdmi_tx_0/hdmi_tx_0/hdmi_tx_0_in_context.xdc] for cell 'H1'
+Finished Parsing XDC File [e:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.gen/sources_1/ip/hdmi_tx_0/hdmi_tx_0/hdmi_tx_0_in_context.xdc] for cell 'H1'
+Parsing XDC File [e:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.gen/sources_1/ip/rom1/rom1/rom1_in_context.xdc] for cell 'G1/CHAR_LOOP[0].rom_inst'
+Finished Parsing XDC File [e:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.gen/sources_1/ip/rom1/rom1/rom1_in_context.xdc] for cell 'G1/CHAR_LOOP[0].rom_inst'
+Parsing XDC File [e:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.gen/sources_1/ip/rom1/rom1/rom1_in_context.xdc] for cell 'G1/CHAR_LOOP[1].rom_inst'
+Finished Parsing XDC File [e:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.gen/sources_1/ip/rom1/rom1/rom1_in_context.xdc] for cell 'G1/CHAR_LOOP[1].rom_inst'
+Parsing XDC File [e:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.gen/sources_1/ip/rom1/rom1/rom1_in_context.xdc] for cell 'G1/CHAR_LOOP[2].rom_inst'
+Finished Parsing XDC File [e:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.gen/sources_1/ip/rom1/rom1/rom1_in_context.xdc] for cell 'G1/CHAR_LOOP[2].rom_inst'
+Parsing XDC File [e:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.gen/sources_1/ip/rom1/rom1/rom1_in_context.xdc] for cell 'G1/CHAR_LOOP[3].rom_inst'
+Finished Parsing XDC File [e:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.gen/sources_1/ip/rom1/rom1/rom1_in_context.xdc] for cell 'G1/CHAR_LOOP[3].rom_inst'
+Parsing XDC File [e:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.gen/sources_1/ip/rom1/rom1/rom1_in_context.xdc] for cell 'G1/CHAR_LOOP[4].rom_inst'
+Finished Parsing XDC File [e:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.gen/sources_1/ip/rom1/rom1/rom1_in_context.xdc] for cell 'G1/CHAR_LOOP[4].rom_inst'
+Parsing XDC File [e:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.gen/sources_1/ip/rom1/rom1/rom1_in_context.xdc] for cell 'G1/CHAR_LOOP[5].rom_inst'
+Finished Parsing XDC File [e:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.gen/sources_1/ip/rom1/rom1/rom1_in_context.xdc] for cell 'G1/CHAR_LOOP[5].rom_inst'
+Parsing XDC File [e:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.gen/sources_1/ip/rom1/rom1/rom1_in_context.xdc] for cell 'G1/CHAR_LOOP[6].rom_inst'
+Finished Parsing XDC File [e:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.gen/sources_1/ip/rom1/rom1/rom1_in_context.xdc] for cell 'G1/CHAR_LOOP[6].rom_inst'
+Parsing XDC File [e:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.gen/sources_1/ip/rom1/rom1/rom1_in_context.xdc] for cell 'G1/CHAR_LOOP[7].rom_inst'
+Finished Parsing XDC File [e:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.gen/sources_1/ip/rom1/rom1/rom1_in_context.xdc] for cell 'G1/CHAR_LOOP[7].rom_inst'
+Parsing XDC File [e:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.gen/sources_1/ip/rom1/rom1/rom1_in_context.xdc] for cell 'G1/CHAR_LOOP[8].rom_inst'
+Finished Parsing XDC File [e:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.gen/sources_1/ip/rom1/rom1/rom1_in_context.xdc] for cell 'G1/CHAR_LOOP[8].rom_inst'
+Parsing XDC File [e:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.gen/sources_1/ip/rom1/rom1/rom1_in_context.xdc] for cell 'G1/CHAR_LOOP[9].rom_inst'
+Finished Parsing XDC File [e:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.gen/sources_1/ip/rom1/rom1/rom1_in_context.xdc] for cell 'G1/CHAR_LOOP[9].rom_inst'
+Parsing XDC File [e:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.gen/sources_1/ip/rom1/rom1/rom1_in_context.xdc] for cell 'G1/CHAR_LOOP[10].rom_inst'
+Finished Parsing XDC File [e:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.gen/sources_1/ip/rom1/rom1/rom1_in_context.xdc] for cell 'G1/CHAR_LOOP[10].rom_inst'
+Parsing XDC File [e:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.gen/sources_1/ip/rom1/rom1/rom1_in_context.xdc] for cell 'G1/CHAR_LOOP[11].rom_inst'
+Finished Parsing XDC File [e:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.gen/sources_1/ip/rom1/rom1/rom1_in_context.xdc] for cell 'G1/CHAR_LOOP[11].rom_inst'
+Parsing XDC File [e:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.gen/sources_1/ip/rom1/rom1/rom1_in_context.xdc] for cell 'G1/CHAR_LOOP[12].rom_inst'
+Finished Parsing XDC File [e:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.gen/sources_1/ip/rom1/rom1/rom1_in_context.xdc] for cell 'G1/CHAR_LOOP[12].rom_inst'
+Parsing XDC File [e:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.gen/sources_1/ip/rom1/rom1/rom1_in_context.xdc] for cell 'G1/CHAR_LOOP[13].rom_inst'
+Finished Parsing XDC File [e:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.gen/sources_1/ip/rom1/rom1/rom1_in_context.xdc] for cell 'G1/CHAR_LOOP[13].rom_inst'
+Parsing XDC File [e:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'C1'
+Finished Parsing XDC File [e:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'C1'
+Parsing XDC File [e:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.gen/sources_1/ip/audio_rom/audio_rom/audio_rom_in_context.xdc] for cell 'A1/audio_inst'
+Finished Parsing XDC File [e:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.gen/sources_1/ip/audio_rom/audio_rom/audio_rom_in_context.xdc] for cell 'A1/audio_inst'
+Parsing XDC File [E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.srcs/constrs_1/new/vga_pins.xdc]
+Finished Parsing XDC File [E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.srcs/constrs_1/new/vga_pins.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.srcs/constrs_1/new/vga_pins.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/VGA_To_HDMI_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/VGA_To_HDMI_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1514.676 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1557.676 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 1514.676 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 1557.676 ; gain = 0.000
 WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'A1/audio_inst' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1515.902 ; gain = 662.809
+Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1557.688 ; gain = 705.934
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7s50csga324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1515.902 ; gain = 662.809
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1557.688 ; gain = 705.934
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property IO_BUFFER_TYPE = NONE for HDMI_clk_n. (constraint file  e:/Projects/FPGA/Sparring_Wario/Sparring_Wario.gen/sources_1/ip/hdmi_tx_0/hdmi_tx_0/hdmi_tx_0_in_context.xdc, line 1).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for HDMI_clk_n. (constraint file  e:/Projects/FPGA/Sparring_Wario/Sparring_Wario.gen/sources_1/ip/hdmi_tx_0/hdmi_tx_0/hdmi_tx_0_in_context.xdc, line 2).
-Applied set_property IO_BUFFER_TYPE = NONE for HDMI_clk_p. (constraint file  e:/Projects/FPGA/Sparring_Wario/Sparring_Wario.gen/sources_1/ip/hdmi_tx_0/hdmi_tx_0/hdmi_tx_0_in_context.xdc, line 3).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for HDMI_clk_p. (constraint file  e:/Projects/FPGA/Sparring_Wario/Sparring_Wario.gen/sources_1/ip/hdmi_tx_0/hdmi_tx_0/hdmi_tx_0_in_context.xdc, line 4).
-Applied set_property IO_BUFFER_TYPE = NONE for HDMI_tx_n[0]. (constraint file  e:/Projects/FPGA/Sparring_Wario/Sparring_Wario.gen/sources_1/ip/hdmi_tx_0/hdmi_tx_0/hdmi_tx_0_in_context.xdc, line 5).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for HDMI_tx_n[0]. (constraint file  e:/Projects/FPGA/Sparring_Wario/Sparring_Wario.gen/sources_1/ip/hdmi_tx_0/hdmi_tx_0/hdmi_tx_0_in_context.xdc, line 6).
-Applied set_property IO_BUFFER_TYPE = NONE for HDMI_tx_n[1]. (constraint file  e:/Projects/FPGA/Sparring_Wario/Sparring_Wario.gen/sources_1/ip/hdmi_tx_0/hdmi_tx_0/hdmi_tx_0_in_context.xdc, line 7).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for HDMI_tx_n[1]. (constraint file  e:/Projects/FPGA/Sparring_Wario/Sparring_Wario.gen/sources_1/ip/hdmi_tx_0/hdmi_tx_0/hdmi_tx_0_in_context.xdc, line 8).
-Applied set_property IO_BUFFER_TYPE = NONE for HDMI_tx_n[2]. (constraint file  e:/Projects/FPGA/Sparring_Wario/Sparring_Wario.gen/sources_1/ip/hdmi_tx_0/hdmi_tx_0/hdmi_tx_0_in_context.xdc, line 9).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for HDMI_tx_n[2]. (constraint file  e:/Projects/FPGA/Sparring_Wario/Sparring_Wario.gen/sources_1/ip/hdmi_tx_0/hdmi_tx_0/hdmi_tx_0_in_context.xdc, line 10).
-Applied set_property IO_BUFFER_TYPE = NONE for HDMI_tx_p[0]. (constraint file  e:/Projects/FPGA/Sparring_Wario/Sparring_Wario.gen/sources_1/ip/hdmi_tx_0/hdmi_tx_0/hdmi_tx_0_in_context.xdc, line 11).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for HDMI_tx_p[0]. (constraint file  e:/Projects/FPGA/Sparring_Wario/Sparring_Wario.gen/sources_1/ip/hdmi_tx_0/hdmi_tx_0/hdmi_tx_0_in_context.xdc, line 12).
-Applied set_property IO_BUFFER_TYPE = NONE for HDMI_tx_p[1]. (constraint file  e:/Projects/FPGA/Sparring_Wario/Sparring_Wario.gen/sources_1/ip/hdmi_tx_0/hdmi_tx_0/hdmi_tx_0_in_context.xdc, line 13).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for HDMI_tx_p[1]. (constraint file  e:/Projects/FPGA/Sparring_Wario/Sparring_Wario.gen/sources_1/ip/hdmi_tx_0/hdmi_tx_0/hdmi_tx_0_in_context.xdc, line 14).
-Applied set_property IO_BUFFER_TYPE = NONE for HDMI_tx_p[2]. (constraint file  e:/Projects/FPGA/Sparring_Wario/Sparring_Wario.gen/sources_1/ip/hdmi_tx_0/hdmi_tx_0/hdmi_tx_0_in_context.xdc, line 15).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for HDMI_tx_p[2]. (constraint file  e:/Projects/FPGA/Sparring_Wario/Sparring_Wario.gen/sources_1/ip/hdmi_tx_0/hdmi_tx_0/hdmi_tx_0_in_context.xdc, line 16).
-Applied set_property IO_BUFFER_TYPE = NONE for clk_100MHz. (constraint file  e:/Projects/FPGA/Sparring_Wario/Sparring_Wario.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 4).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for clk_100MHz. (constraint file  e:/Projects/FPGA/Sparring_Wario/Sparring_Wario.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 5).
+Applied set_property IO_BUFFER_TYPE = NONE for HDMI_clk_n. (constraint file  e:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.gen/sources_1/ip/hdmi_tx_0/hdmi_tx_0/hdmi_tx_0_in_context.xdc, line 1).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for HDMI_clk_n. (constraint file  e:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.gen/sources_1/ip/hdmi_tx_0/hdmi_tx_0/hdmi_tx_0_in_context.xdc, line 2).
+Applied set_property IO_BUFFER_TYPE = NONE for HDMI_clk_p. (constraint file  e:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.gen/sources_1/ip/hdmi_tx_0/hdmi_tx_0/hdmi_tx_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for HDMI_clk_p. (constraint file  e:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.gen/sources_1/ip/hdmi_tx_0/hdmi_tx_0/hdmi_tx_0_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for HDMI_tx_n[0]. (constraint file  e:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.gen/sources_1/ip/hdmi_tx_0/hdmi_tx_0/hdmi_tx_0_in_context.xdc, line 5).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for HDMI_tx_n[0]. (constraint file  e:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.gen/sources_1/ip/hdmi_tx_0/hdmi_tx_0/hdmi_tx_0_in_context.xdc, line 6).
+Applied set_property IO_BUFFER_TYPE = NONE for HDMI_tx_n[1]. (constraint file  e:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.gen/sources_1/ip/hdmi_tx_0/hdmi_tx_0/hdmi_tx_0_in_context.xdc, line 7).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for HDMI_tx_n[1]. (constraint file  e:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.gen/sources_1/ip/hdmi_tx_0/hdmi_tx_0/hdmi_tx_0_in_context.xdc, line 8).
+Applied set_property IO_BUFFER_TYPE = NONE for HDMI_tx_n[2]. (constraint file  e:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.gen/sources_1/ip/hdmi_tx_0/hdmi_tx_0/hdmi_tx_0_in_context.xdc, line 9).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for HDMI_tx_n[2]. (constraint file  e:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.gen/sources_1/ip/hdmi_tx_0/hdmi_tx_0/hdmi_tx_0_in_context.xdc, line 10).
+Applied set_property IO_BUFFER_TYPE = NONE for HDMI_tx_p[0]. (constraint file  e:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.gen/sources_1/ip/hdmi_tx_0/hdmi_tx_0/hdmi_tx_0_in_context.xdc, line 11).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for HDMI_tx_p[0]. (constraint file  e:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.gen/sources_1/ip/hdmi_tx_0/hdmi_tx_0/hdmi_tx_0_in_context.xdc, line 12).
+Applied set_property IO_BUFFER_TYPE = NONE for HDMI_tx_p[1]. (constraint file  e:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.gen/sources_1/ip/hdmi_tx_0/hdmi_tx_0/hdmi_tx_0_in_context.xdc, line 13).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for HDMI_tx_p[1]. (constraint file  e:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.gen/sources_1/ip/hdmi_tx_0/hdmi_tx_0/hdmi_tx_0_in_context.xdc, line 14).
+Applied set_property IO_BUFFER_TYPE = NONE for HDMI_tx_p[2]. (constraint file  e:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.gen/sources_1/ip/hdmi_tx_0/hdmi_tx_0/hdmi_tx_0_in_context.xdc, line 15).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for HDMI_tx_p[2]. (constraint file  e:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.gen/sources_1/ip/hdmi_tx_0/hdmi_tx_0/hdmi_tx_0_in_context.xdc, line 16).
+Applied set_property IO_BUFFER_TYPE = NONE for clk_100MHz. (constraint file  e:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 4).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk_100MHz. (constraint file  e:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 5).
 Applied set_property KEEP_HIERARCHY = SOFT for H1. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for G1/\CHAR_LOOP[0].rom_inst . (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for G1/\CHAR_LOOP[10].rom_inst . (constraint file  auto generated constraint).
@@ -247,7 +247,7 @@ Applied set_property KEEP_HIERARCHY = SOFT for G1/\CHAR_LOOP[9].rom_inst . (cons
 Applied set_property KEEP_HIERARCHY = SOFT for C1. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for A1/audio_inst. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1515.902 ; gain = 662.809
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1557.688 ; gain = 705.934
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'debouncer'
 INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'MY_PIXEL_DRIVER'
@@ -273,7 +273,7 @@ INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'one-hot' in module 'MY_PIXEL_DRIVER'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 1515.902 ; gain = 662.809
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1557.688 ; gain = 705.934
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -295,14 +295,13 @@ Detailed RTL Component Info :
 	   2 Input   12 Bit       Adders := 3     
 	   2 Input   11 Bit       Adders := 3     
 	   2 Input   10 Bit       Adders := 2     
-	   2 Input    9 Bit       Adders := 1     
-	   2 Input    8 Bit       Adders := 3     
+	   2 Input    8 Bit       Adders := 4     
 	   3 Input    8 Bit       Adders := 1     
 	   2 Input    6 Bit       Adders := 1     
 	   2 Input    5 Bit       Adders := 3     
 	   2 Input    4 Bit       Adders := 1     
 	   2 Input    3 Bit       Adders := 3     
-	   2 Input    2 Bit       Adders := 1     
+	   2 Input    2 Bit       Adders := 2     
 +---Registers : 
 	               32 Bit    Registers := 5     
 	               25 Bit    Registers := 1     
@@ -311,13 +310,12 @@ Detailed RTL Component Info :
 	               13 Bit    Registers := 1     
 	               12 Bit    Registers := 1     
 	               11 Bit    Registers := 2     
-	                9 Bit    Registers := 1     
 	                8 Bit    Registers := 2     
 	                6 Bit    Registers := 1     
 	                5 Bit    Registers := 3     
 	                4 Bit    Registers := 2     
 	                3 Bit    Registers := 4     
-	                2 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
 	                1 Bit    Registers := 22    
 +---Muxes : 
 	   2 Input   32 Bit        Muxes := 5     
@@ -337,7 +335,7 @@ Detailed RTL Component Info :
 	   3 Input   12 Bit        Muxes := 1     
 	   8 Input   11 Bit        Muxes := 1     
 	   2 Input   11 Bit        Muxes := 1     
-	   2 Input    9 Bit        Muxes := 2     
+	   2 Input    9 Bit        Muxes := 1     
 	   2 Input    8 Bit        Muxes := 8     
 	   7 Input    7 Bit        Muxes := 1     
 	   2 Input    7 Bit        Muxes := 10    
@@ -349,7 +347,7 @@ Detailed RTL Component Info :
 	   3 Input    3 Bit        Muxes := 1     
 	   2 Input    3 Bit        Muxes := 4     
 	   3 Input    2 Bit        Muxes := 1     
-	   2 Input    2 Bit        Muxes := 4     
+	   2 Input    2 Bit        Muxes := 5     
 	   4 Input    2 Bit        Muxes := 1     
 	   2 Input    1 Bit        Muxes := 38    
 	   3 Input    1 Bit        Muxes := 3     
@@ -377,7 +375,7 @@ DSP Report: operator WARIO/addr_signal0 is absorbed into DSP WARIO/addr_signal0.
 DSP Report: operator WARIO/addr_signal1 is absorbed into DSP WARIO/addr_signal0.
 DSP Report: operator WARIO/addr_signal0 is absorbed into DSP WARIO/addr_signal0.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:02:14 ; elapsed = 00:02:17 . Memory (MB): peak = 1694.754 ; gain = 841.660
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:58 ; elapsed = 00:02:01 . Memory (MB): peak = 1695.703 ; gain = 843.949
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -415,6 +413,7 @@ ROM: Preliminary Mapping Report
 |chain_bram  | ball[0]         | 512x5         | LUT            | 
 |chain_bram  | ball_red[0]     | 512x9         | LUT            | 
 |chain_bram  | ball_pink[0]    | 512x8         | LUT            | 
+|chain_bram  | ball_punch_1[0] | 512x5         | LUT            | 
 |chain_bram  | ball_punch_2[0] | 512x5         | LUT            | 
 |chain_bram  | ball_punch_3[0] | 512x5         | LUT            | 
 |chain_bram  | ball[0]         | 512x5         | LUT            | 
@@ -480,19 +479,19 @@ Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:23 ; elapsed = 00:02:26 . Memory (MB): peak = 1694.754 ; gain = 841.660
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:05 ; elapsed = 00:02:08 . Memory (MB): peak = 1695.703 ; gain = 843.949
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:02:27 ; elapsed = 00:02:30 . Memory (MB): peak = 1694.754 ; gain = 841.660
+Finished Timing Optimization : Time (s): cpu = 00:02:08 ; elapsed = 00:02:11 . Memory (MB): peak = 1695.703 ; gain = 843.949
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:02:34 ; elapsed = 00:02:38 . Memory (MB): peak = 1694.754 ; gain = 841.660
+Finished Technology Mapping : Time (s): cpu = 00:02:13 ; elapsed = 00:02:17 . Memory (MB): peak = 1695.703 ; gain = 843.949
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -510,37 +509,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:02:40 ; elapsed = 00:02:43 . Memory (MB): peak = 1694.754 ; gain = 841.660
+Finished IO Insertion : Time (s): cpu = 00:02:18 ; elapsed = 00:02:21 . Memory (MB): peak = 1695.703 ; gain = 843.949
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:02:40 ; elapsed = 00:02:43 . Memory (MB): peak = 1694.754 ; gain = 841.660
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:18 ; elapsed = 00:02:21 . Memory (MB): peak = 1695.703 ; gain = 843.949
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:42 ; elapsed = 00:02:45 . Memory (MB): peak = 1694.754 ; gain = 841.660
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:19 ; elapsed = 00:02:22 . Memory (MB): peak = 1695.703 ; gain = 843.949
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:02:42 ; elapsed = 00:02:45 . Memory (MB): peak = 1694.754 ; gain = 841.660
+Finished Renaming Generated Ports : Time (s): cpu = 00:02:19 ; elapsed = 00:02:22 . Memory (MB): peak = 1695.703 ; gain = 843.949
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:02:43 ; elapsed = 00:02:46 . Memory (MB): peak = 1694.754 ; gain = 841.660
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:20 ; elapsed = 00:02:23 . Memory (MB): peak = 1695.703 ; gain = 843.949
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:02:43 ; elapsed = 00:02:46 . Memory (MB): peak = 1694.754 ; gain = 841.660
+Finished Renaming Generated Nets : Time (s): cpu = 00:02:20 ; elapsed = 00:02:23 . Memory (MB): peak = 1695.703 ; gain = 843.949
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -573,44 +572,44 @@ Report Cell Usage:
 |3     |hdmi_tx_0_bbox |     1|
 |4     |rom1_bbox      |    14|
 |18    |BUFG           |     1|
-|19    |CARRY4         |  1957|
+|19    |CARRY4         |  1956|
 |20    |DSP48E1        |     1|
 |21    |LUT1           |   847|
-|22    |LUT2           |  1877|
-|23    |LUT3           |  2406|
-|24    |LUT4           |  1889|
-|25    |LUT5           |  2176|
-|26    |LUT6           |  7728|
+|22    |LUT2           |  1880|
+|23    |LUT3           |  2428|
+|24    |LUT4           |  1881|
+|25    |LUT5           |  2173|
+|26    |LUT6           |  7710|
 |27    |MUXF7          |  1116|
 |28    |MUXF8          |   340|
-|29    |FDCE           |   268|
+|29    |FDCE           |   259|
 |30    |FDPE           |    31|
 |31    |FDRE           |   351|
 |32    |IBUF           |     2|
 |33    |OBUF           |     2|
 +------+---------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:02:43 ; elapsed = 00:02:46 . Memory (MB): peak = 1694.754 ; gain = 841.660
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:20 ; elapsed = 00:02:23 . Memory (MB): peak = 1695.703 ; gain = 843.949
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:02:31 ; elapsed = 00:02:44 . Memory (MB): peak = 1694.754 ; gain = 781.137
-Synthesis Optimization Complete : Time (s): cpu = 00:02:43 ; elapsed = 00:02:46 . Memory (MB): peak = 1694.754 ; gain = 841.660
+Synthesis Optimization Runtime : Time (s): cpu = 00:02:10 ; elapsed = 00:02:21 . Memory (MB): peak = 1695.703 ; gain = 741.953
+Synthesis Optimization Complete : Time (s): cpu = 00:02:20 ; elapsed = 00:02:23 . Memory (MB): peak = 1695.703 ; gain = 843.949
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.285 . Memory (MB): peak = 1694.754 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 3414 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.216 . Memory (MB): peak = 1695.703 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 3413 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1694.754 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1695.703 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Synth Design complete | Checksum: 7675fa8
+Synth Design complete | Checksum: d1bfbefd
 INFO: [Common 17-83] Releasing license: Synthesis
 93 Infos, 39 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:02:50 ; elapsed = 00:02:54 . Memory (MB): peak = 1694.754 ; gain = 1223.691
-INFO: [Common 17-1381] The checkpoint 'E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.runs/synth_1/VGA_To_HDMI.dcp' has been generated.
+synth_design: Time (s): cpu = 00:02:27 ; elapsed = 00:02:30 . Memory (MB): peak = 1695.703 ; gain = 1225.977
+INFO: [Common 17-1381] The checkpoint 'E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.runs/synth_1/VGA_To_HDMI.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file VGA_To_HDMI_utilization_synth.rpt -pb VGA_To_HDMI_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Tue Apr  8 12:53:22 2025...
+INFO: [Common 17-206] Exiting Vivado at Wed Apr 16 05:57:14 2025...

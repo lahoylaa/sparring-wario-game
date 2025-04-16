@@ -2,10 +2,10 @@
 // Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
-// Date        : Tue Apr  8 01:12:34 2025
+// Date        : Wed Apr 16 05:53:13 2025
 // Host        : DESKTOP-88C58FM running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode synth_stub
-//               e:/Projects/FPGA/Sparring_Wario/Sparring_Wario.gen/sources_1/ip/audio_rom/audio_rom_stub.v
+//               e:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.gen/sources_1/ip/audio_rom/audio_rom_stub.v
 // Design      : audio_rom
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7s50csga324-1
@@ -16,9 +16,9 @@
 // Please paste the declaration into a Verilog source file or add the file as an additional source.
 (* x_core_info = "blk_mem_gen_v8_4_6,Vivado 2023.1" *)
 module audio_rom(clka, addra, douta)
-/* synthesis syn_black_box black_box_pad_pin="addra[17:0],douta[7:0]" */
+/* synthesis syn_black_box black_box_pad_pin="addra[15:0],douta[7:0]" */
 /* synthesis syn_force_seq_prim="clka" */;
   input clka /* synthesis syn_isclock = 1 */;
-  input [17:0]addra;
+  input [15:0]addra;
   output [7:0]douta;
 endmodule

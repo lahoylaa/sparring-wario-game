@@ -3,12 +3,12 @@
 # SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
 # IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
 # SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
-# Start of session at: Tue Apr  8 12:50:17 2025
-# Process ID: 4212
-# Current directory: E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.runs/synth_1
+# Start of session at: Wed Apr 16 05:54:34 2025
+# Process ID: 31200
+# Current directory: E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.runs/synth_1
 # Command line: vivado.exe -log VGA_To_HDMI.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source VGA_To_HDMI.tcl
-# Log file: E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.runs/synth_1/VGA_To_HDMI.vds
-# Journal file: E:/Projects/FPGA/Sparring_Wario/Sparring_Wario.runs/synth_1\vivado.jou
+# Log file: E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.runs/synth_1/VGA_To_HDMI.vds
+# Journal file: E:/Projects/FPGA/Sparring_Wario_Game/Sparring_Wario/Sparring_Wario.runs/synth_1\vivado.jou
 # Running On: DESKTOP-88C58FM, OS: Windows, CPU Frequency: 3793 MHz, CPU Physical cores: 16, Host memory: 29952 MB
 #-----------------------------------------------------------
 source VGA_To_HDMI.tcl -notrace

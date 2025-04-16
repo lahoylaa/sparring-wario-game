@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
-| Date             : Tue Apr  8 12:58:29 2025
+| Date             : Wed Apr 16 06:02:26 2025
 | Host             : DESKTOP-88C58FM running 64-bit major release  (build 9200)
 | Command          : report_power -file VGA_To_HDMI_power_routed.rpt -pb VGA_To_HDMI_power_summary_routed.pb -rpx VGA_To_HDMI_power_routed.rpx
 | Design           : VGA_To_HDMI
@@ -30,11 +30,11 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.583        |
+| Total On-Chip Power (W)  | 0.579        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.507        |
-| Device Static (W)        | 0.076        |
+| Dynamic (W)              | 0.505        |
+| Device Static (W)        | 0.074        |
 | Effective TJA (C/W)      | 4.9          |
 | Max Ambient (C)          | 82.1         |
 | Junction Temperature (C) | 27.9         |
@@ -52,22 +52,22 @@ Table of Contents
 +-------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                 | Power (W) | Used     | Available | Utilization (%) |
 +-------------------------+-----------+----------+-----------+-----------------+
-| Clocks                  |     0.007 |        6 |       --- |             --- |
-| Slice Logic             |     0.134 |    21902 |       --- |             --- |
-|   LUT as Logic          |     0.125 |    14753 |     32600 |           45.25 |
-|   CARRY4                |     0.008 |     1957 |      8150 |           24.01 |
-|   F7/F8 Muxes           |    <0.001 |     1521 |     32600 |            4.67 |
-|   Register              |    <0.001 |      879 |     65200 |            1.35 |
+| Clocks                  |     0.005 |        6 |       --- |             --- |
+| Slice Logic             |     0.134 |    21573 |       --- |             --- |
+|   LUT as Logic          |     0.126 |    14592 |     32600 |           44.76 |
+|   CARRY4                |     0.008 |     1956 |      8150 |           24.00 |
+|   F7/F8 Muxes           |    <0.001 |     1457 |     32600 |            4.47 |
+|   Register              |    <0.001 |      868 |     65200 |            1.33 |
 |   LUT as Shift Register |    <0.001 |       16 |      9600 |            0.17 |
 |   BUFG                  |    <0.001 |        1 |        32 |            3.13 |
-|   Others                |     0.000 |      225 |       --- |             --- |
-| Signals                 |     0.126 |    15394 |       --- |             --- |
-| Block RAM               |     0.002 |       66 |        75 |           88.00 |
+|   Others                |     0.000 |      128 |       --- |             --- |
+| Signals                 |     0.126 |    14916 |       --- |             --- |
+| Block RAM               |     0.002 |     17.5 |        75 |           23.33 |
 | MMCM                    |     0.106 |        1 |         5 |           20.00 |
 | DSPs                    |    <0.001 |        1 |       120 |            0.83 |
 | I/O                     |     0.132 |       13 |       210 |            6.19 |
-| Static Power            |     0.076 |          |           |                 |
-| Total                   |     0.583 |          |           |                 |
+| Static Power            |     0.074 |          |           |                 |
+| Total                   |     0.579 |          |           |                 |
 +-------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -77,7 +77,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint    |       1.000 |     0.282 |       0.270 |      0.012 |       NA    | Unspecified | NA         |
+| Vccint    |       1.000 |     0.279 |       0.268 |      0.011 |       NA    | Unspecified | NA         |
 | Vccaux    |       1.800 |     0.071 |       0.059 |      0.013 |       NA    | Unspecified | NA         |
 | Vcco33    |       3.300 |     0.041 |       0.040 |      0.001 |       NA    | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
@@ -86,7 +86,7 @@ Table of Contents
 | Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vccaux_io |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
-| Vccbram   |       1.000 |     0.002 |       0.000 |      0.002 |       NA    | Unspecified | NA         |
+| Vccbram   |       1.000 |     0.001 |       0.000 |      0.001 |       NA    | Unspecified | NA         |
 | Vccadc    |       1.800 |     0.020 |       0.000 |      0.020 |       NA    | Unspecified | NA         |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 
@@ -147,10 +147,10 @@ Table of Contents
 +-----------------+-----------+
 | Name            | Power (W) |
 +-----------------+-----------+
-| VGA_To_HDMI     |     0.507 |
-|   A1            |     0.005 |
-|     audio_inst  |     0.004 |
-|       U0        |     0.004 |
+| VGA_To_HDMI     |     0.505 |
+|   A1            |     0.004 |
+|     audio_inst  |     0.002 |
+|       U0        |     0.002 |
 |   C1            |     0.106 |
 |     inst        |     0.106 |
 |   H1            |     0.132 |
@@ -158,8 +158,8 @@ Table of Contents
 |   M1            |     0.248 |
 |     CHAIN       |     0.210 |
 |       BALLBRAM1 |     0.002 |
-|     WARIO       |     0.037 |
-|       BRAM00    |     0.036 |
+|     WARIO       |     0.038 |
+|       BRAM00    |     0.037 |
 |   V1            |     0.013 |
 +-----------------+-----------+
 
