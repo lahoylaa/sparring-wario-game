@@ -86,6 +86,9 @@ architecture Behavioral of MY_PIXEL_DRIVER is
   signal super_move_delay      : integer range 0 to 30 := 0;
   signal super_move_delay_flag : std_logic             := '0';
 
+  signal hit_cooldown_counter : integer range 0 to 416666 := 0; --1/60s
+  signal hit_cooldown_active  : std_logic                 := '0';
+
   ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
   ------------Components-----------------------
   component draw_background is
@@ -259,6 +262,9 @@ begin
       punch_active <= '0';
       punch_delay_counter <= 0;
       hit_counter_signal <= 0;
+      hit_cooldown_active <= '0';
+      hit_cooldown_counter <= 0;
+      hit_detected <= '0';
 
     elsif rising_edge(pixel_clk) then
       -- state update
@@ -273,13 +279,27 @@ begin
         in_range <= '0';
       end if;
 
-      -- Hit detection
-      if ball_x >= sprx and ball_x <= sprx + 120
-         and ball_y >= spry and ball_y <= spry + 120
-         and chain_enable = '1' then
-        hit_detected <= '1';
-      else
-        hit_detected <= '0';
+      -- Possible fix for bug in the code
+      if current_state = "001" or current_state = "011" then
+        if hit_cooldown_active = '1' then
+          if hit_cooldown_counter = 416666 then
+            hit_cooldown_active <= '0';
+            hit_cooldown_counter <= 0;
+          else
+            hit_cooldown_counter <= hit_cooldown_counter + 1;
+          end if;
+        end if;
+      end if;
+
+      if hit_cooldown_active = '0' then
+        -- Hit detection
+        if ball_x >= sprx and ball_x <= sprx + 120
+           and ball_y >= spry and ball_y <= spry + 120
+           and chain_enable = '1' then
+          hit_detected <= '1';
+        else
+          hit_detected <= '0';
+        end if;
       end if;
 
       -- Punch delay
@@ -291,6 +311,7 @@ begin
           punch_active <= '1';
           -- increment hit counter
           hit_counter_signal <= hit_counter_signal + 1;
+          hit_cooldown_active <= '1';
         else
           punch_active <= '0';
           punch_delay_counter <= punch_delay_counter + 1;
