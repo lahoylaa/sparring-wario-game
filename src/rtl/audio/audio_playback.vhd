@@ -1,3 +1,28 @@
+----------------------------------------------------------------------------------
+-- Company: 
+-- Engineer: Aeron Lahoylahoy
+-- 
+-- Create Date: 03/17/2025 02:30:00 PM
+-- Design Name: 
+-- Module Name: audio_playback - Behavioral
+-- Project Name: 
+-- Target Devices: 
+-- Tool Versions: 
+-- Description: 
+--   This module serves as the audio playback controller for a game implemented 
+--   on an FPGA. It manages playback of audio samples from a ROM and generates 
+--   stereo audio output using PWM.
+--   The system processes sample timing and generates left/right audio channels.
+-- 
+-- Dependencies: 
+--   - audio_rom: ROM component containing 8-bit signed PCM audio samples.
+--
+-- Revision:
+-- Revision 0.01 - File Created
+-- Additional Comments:
+--
+----------------------------------------------------------------------------------
+
 library IEEE;
   use IEEE.STD_LOGIC_1164.all;
   use IEEE.NUMERIC_STD.all;

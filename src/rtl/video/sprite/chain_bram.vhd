@@ -1,9 +1,9 @@
 ----------------------------------------------------------------------------------
 -- Company: 
--- Engineer: 
+-- Engineer: Aeron Lahoylahoy
 -- 
 -- Create Date: 03/17/2025 
--- Design Name: Chain BRAM Controller
+-- Design Name: 
 -- Module Name: chain_bram - Behavioral
 -- Project Name: 
 -- Target Devices: 

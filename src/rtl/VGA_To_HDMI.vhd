@@ -1,6 +1,6 @@
 ----------------------------------------------------------------------------------
 -- Company: 
--- Engineer: 
+-- Engineer: Aeron Lahoylahoy
 -- 
 -- Create Date: 03/17/2025 02:30:00 PM
 -- Design Name: VGA to HDMI Converter

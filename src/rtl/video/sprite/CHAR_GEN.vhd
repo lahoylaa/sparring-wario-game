@@ -1,6 +1,6 @@
 ----------------------------------------------------------------------------------
 -- Company:         
--- Engineer:       
+-- Engineer:  Aeron Lahoylahoy
 -- 
 -- Create Date:     02/09/2025 04:04:01 PM
 -- Module Name:     CHAR_GEN - Behavioral

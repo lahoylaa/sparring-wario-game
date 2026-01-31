@@ -3,7 +3,7 @@
 -- Engineer: Aeron Lahoylahoy
 -- 
 -- Create Date: 03/17/2025 02:30:00 PM
--- Design Name: Pixel Driver
+-- Design Name: 
 -- Module Name: MY_PIXEL_DRIVER - Behavioral
 -- Project Name: 
 -- Target Devices: 
