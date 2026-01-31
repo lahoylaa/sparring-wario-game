@@ -1,4 +1,0 @@
-xpm_cdc.sv,systemverilog,xpm,C:/Xilinx/Vivado/2023.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv,incdir="../../../../Sparring_Wario.gen/sources_1/ip/clk_wiz_0"
-xpm_VCOMP.vhd,vhdl,xpm,C:/Xilinx/Vivado/2023.1/data/ip/xpm/xpm_VCOMP.vhd,incdir="../../../../Sparring_Wario.gen/sources_1/ip/clk_wiz_0"
-clk_wiz_0_sim_netlist.vhdl,vhdl,xil_defaultlib,../../../../Sparring_Wario.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_sim_netlist.vhdl,incdir="../../../../Sparring_Wario.gen/sources_1/ip/clk_wiz_0"
-glbl.v,Verilog,xil_defaultlib,glbl.v
