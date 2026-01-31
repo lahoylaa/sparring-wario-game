@@ -1,7 +1,7 @@
 # Sparring Wario - FPGA Game (VHDL)
 
 ## Overview
-This proejct is a hardware-implemented replica of the Sparring Wario minigame. The game is designed and deployed on a Xilinx Spartan-7 FPGA board using VHDL.
+This project is a hardware-implemented replica of the Sparring Wario minigame. The game is designed and deployed on a Xilinx Spartan-7 FPGA board using VHDL.
 
 The game features real-time video output, input handling, and audio generation. These features have all been implemented in hardware with a soft-core processor.
 
